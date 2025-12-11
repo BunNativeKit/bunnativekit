@@ -7,3 +7,6 @@ BunNativeKit (bnk) is a little research project i started to do a bunch of funny
 ### Essentially a TLDR of BNK would be my funny attempt at working with native code in Bun, but wrapping it up in a nice DX box :D
 
 Give https://bunnativekit.xwx.gg a look for more nonsense (bnk.xwx.gg also works dw <3)
+
+
+MIT License <3

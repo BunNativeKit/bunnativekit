@@ -1,6 +1,7 @@
 {
 	"name": "bunnativekit",
 	"private": true,
+	"license": "MIT",
 	"scripts": {
 		"build": "turbo run build",
 		"clean": "turbo run clean",

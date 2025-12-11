@@ -1,6 +1,6 @@
 {
   "name": "bnk",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "type": "module",
   "repository": {
     "type": "GitHub",
@@ -9,6 +9,7 @@
   "publishConfig": {
     "access": "public"
   },
+  "license": "MIT",
   "main": "./src/index.ts",
   "bin": {
     "bnk": "./src/cli.ts"

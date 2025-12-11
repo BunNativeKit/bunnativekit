@@ -1,6 +1,6 @@
 {
   "name": "@bunnativekit/jit",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "type": "module",
   "main": "./src/index.ts",
   "types": "./src/index.ts",
@@ -8,6 +8,7 @@
     "type": "GitHub",
     "url": "https://github.com/bunnativekit/bunnativekit"
   },
+  "license": "MIT",
   "exports": {
     ".": {
       "bun": "./src/index.ts",
