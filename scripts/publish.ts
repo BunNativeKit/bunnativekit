@@ -5,6 +5,7 @@ import { join } from "path";
 
 const WORKSPACE_ROOT = import.meta.dir.replace("/scripts", "");
 const AUTO_YES = process.argv.includes("--yes") || process.argv.includes("-y");
+const FORCE_PUBLISH = process.argv.includes("--force") || process.argv.includes("-f");
 
 interface PackageJson {
     name: string;
@@ -140,28 +141,39 @@ async function main() {
 
     const packages = allPackages.map(dir => getPackageInfo(dir, changedFiles));
     const publishable = packages.filter(p => isPublishable(p.pkgJson));
-    const toBump = publishable.filter(p => p.hasChanges);
+    const toBump = FORCE_PUBLISH ? publishable : publishable.filter(p => p.hasChanges);
 
     if (toBump.length === 0) {
-        console.log("No packages with changes detected. Nothing to publish.");
+        const message = FORCE_PUBLISH
+            ? "No publishable packages found."
+            : "No packages with changes detected. Nothing to publish.";
+        console.log(message);
         return;
     }
 
-    console.log("Packages to bump:");
-    for (const pkg of toBump) {
-        console.log(`~ ${pkg.pkgJson.name}: ${pkg.pkgJson.version} -> ${pkg.newVersion}`);
+    if (FORCE_PUBLISH) {
+        console.log("Force publish mode - all publishable packages will be published:");
+        for (const pkg of toBump) {
+            console.log(`~ ${pkg.pkgJson.name}@${pkg.pkgJson.version}`);
+        }
+    } else {
+        console.log("Packages to bump:");
+        for (const pkg of toBump) {
+            console.log(`~ ${pkg.pkgJson.name}: ${pkg.pkgJson.version} -> ${pkg.newVersion}`);
+        }
     }
     console.log();
 
-    // Step 5: Bump versions
-    console.log("Bumping versions...");
-    for (const pkg of toBump) {
-        const pkgJsonPath = join(pkg.path, "package.json");
-        pkg.pkgJson.version = pkg.newVersion!;
-        writeJson(pkgJsonPath, pkg.pkgJson);
-        console.log(`+ ${pkg.pkgJson.name}@${pkg.newVersion}`);
+    if (!FORCE_PUBLISH) {
+        console.log("Bumping versions...");
+        for (const pkg of toBump) {
+            const pkgJsonPath = join(pkg.path, "package.json");
+            pkg.pkgJson.version = pkg.newVersion!;
+            writeJson(pkgJsonPath, pkg.pkgJson);
+            console.log(`+ ${pkg.pkgJson.name}@${pkg.newVersion}`);
+        }
+        console.log();
     }
-    console.log();
 
     console.log("Building packages...");
     const buildResult = Bun.spawnSync(["bun", "run", "build"], {
@@ -177,8 +189,8 @@ async function main() {
     console.log();
 
     console.log("Will publish:");
-    for (const pkg of publishable) {
-        const version = toBump.find(p => p.pkgJson.name === pkg.pkgJson.name)?.newVersion || pkg.pkgJson.version;
+    for (const pkg of toBump) {
+        const version = pkg.newVersion || pkg.pkgJson.version;
         console.log(`bun publish --access public`);
         console.log(`|${pkg.pkgJson.name}@${version}`);
         console.log(`|cwd: ${pkg.path}\n`);
@@ -194,7 +206,7 @@ async function main() {
     let published = 0;
     let failed = 0;
 
-    for (const pkg of publishable) {
+    for (const pkg of toBump) {
         console.log(`~Publishing ${pkg.pkgJson.name}...`);
 
         const result = Bun.spawnSync(["bun", "publish", "--access", "public"], {

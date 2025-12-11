@@ -33,6 +33,20 @@ export default function HomePage() {
             body="Pre-compile for production. Cross-platform builds, type generation."
           />
           <FeatureBlurb label="Runtime" body="Load pre-built binaries. Consistent API across platforms." />
+          
+          <div className="flex gap-8 text-xl pt-16">
+            <Link href="/docs" className="hover:underline">
+              Documentation →
+            </Link>
+            <Link
+              href="https://github.com/bunnativekit/bunnativekit"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:underline"
+            >
+              GitHub →
+            </Link>
+          </div>
         </div>
 
         <CodeSection
