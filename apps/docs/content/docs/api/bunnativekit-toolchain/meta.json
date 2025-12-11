@@ -1,0 +1,10 @@
+{
+  "title": "@bunnativekit/toolchain",
+  "pages": [
+    "index",
+    "classes",
+    "functions",
+    "interfaces",
+    "type-aliases"
+  ]
+}

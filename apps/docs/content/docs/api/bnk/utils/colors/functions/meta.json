@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "error",
+    "header",
+    "info",
+    "keyValue",
+    "listItem",
+    "status",
+    "success",
+    "warn"
+  ],
+  "title": "Functions"
+}

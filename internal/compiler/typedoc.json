@@ -1,0 +1,6 @@
+{
+  "name": "@internal/compiler",
+  "entryPoints": ["./src/index.ts"],
+  "tsconfig": "./tsconfig.json",
+  "readme": "none"
+}

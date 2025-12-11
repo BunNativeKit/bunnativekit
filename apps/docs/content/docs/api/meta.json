@@ -1,0 +1,19 @@
+{
+  "title": "API Ref",
+  "pages": [
+    "index",
+    "bnk",
+    "bunnativekit-aot",
+    "bunnativekit-jit",
+    "bunnativekit-runtime",
+    "bunnativekit-types",
+    "bunnativekit-loader",
+    "bunnativekit-platform",
+    "bunnativekit-cache",
+    "bunnativekit-debug",
+    "bunnativekit-schema",
+    "bunnativekit-compiler",
+    "bunnativekit-isolation",
+    "bunnativekit-toolchain"
+  ]
+}

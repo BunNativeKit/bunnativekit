@@ -1,0 +1,8 @@
+{
+  "pages": [
+    "defineConfig",
+    "defineModule",
+    "loadModule"
+  ],
+  "title": "Functions"
+}

@@ -1,0 +1,7 @@
+{
+  "pages": [
+    "compileAOT",
+    "generateTypeDeclarations"
+  ],
+  "title": "Functions"
+}

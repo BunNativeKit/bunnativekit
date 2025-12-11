@@ -1,0 +1,53 @@
+---
+title: Getting Started
+description: How to get started with BunNativeKit
+---
+
+<Cards>
+  <Card title="API Ref" href="/docs/api" />
+</Cards>
+
+## Packages
+
+<Cards>
+  <Card title="bnk" href="/docs/api/apps-bnk" description="" />
+  <Card title="@bunnativekit/aot" href="/docs/api/packages-aot" description="" />
+  <Card title="@bunnativekit/jit" href="/docs/api/packages-jit" description="" />
+  <Card title="@bunnativekit/runtime" href="/docs/api/packages-runtime" description="" />
+  <Card title="@bunnativekit/types" href="/docs/api/packages-types" description="" />
+</Cards>
+
+
+## Getting Started
+
+This guide will help you get started with BunNativeKit.
+
+## Installation
+
+
+```bash tab="bun"
+bun add bnk
+```
+
+## Basic Usage
+
+```typescript
+import { jit } from "@bunnativekit/jit";
+
+console.log("Basic JIT Add");
+
+const result = await jit.zig(`
+  export fn main(a: i32, b: i32) i32 {
+    return a + b;
+  }
+`, 6, 7);
+
+console.log(`6 + 7 = ${result}`);
+console.log(`Type: ${typeof result}`);
+
+```
+
+## Next Steps
+
+- Check out the [API Reference](/docs/api) for detailed documentation
+- Explore individual package documentation in the sidebar

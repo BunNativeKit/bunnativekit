@@ -1,0 +1,42 @@
+{
+  "name": "bnk",
+  "version": "0.0.3",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./src/index.ts",
+  "bin": {
+    "bnk": "./src/cli.ts"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./cli": "./src/cli.ts"
+  },
+  "engines": {
+    "bun": ">=1.0.0"
+  },
+  "scripts": {
+    "dev": "bun run --watch src/cli.ts",
+    "check-types": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@bunnativekit/aot": "workspace:*",
+    "@bunnativekit/jit": "workspace:*",
+    "@bunnativekit/runtime": "workspace:*",
+    "@bunnativekit/types": "workspace:*",
+    "@bunnativekit/cache": "workspace:*",
+    "@bunnativekit/compiler": "workspace:*",
+    "@bunnativekit/debug": "workspace:*",
+    "@bunnativekit/isolation": "workspace:*",
+    "@bunnativekit/loader": "workspace:*",
+    "@bunnativekit/platform": "workspace:*",
+    "@bunnativekit/schema": "workspace:*",
+    "@bunnativekit/toolchain": "workspace:*",
+    "commander": "^14.0.2"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.7.2"
+  }
+}

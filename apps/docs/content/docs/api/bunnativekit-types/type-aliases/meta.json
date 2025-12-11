@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "BindingMethod",
+    "DebugLevel",
+    "ErrorMode",
+    "FFIType",
+    "FFITypeString",
+    "IPCMessage",
+    "IsolationMode",
+    "OptimizationLevel",
+    "PlatformArch",
+    "SourceLanguage",
+    "TargetArch",
+    "TargetPlatform"
+  ],
+  "title": "Types"
+}

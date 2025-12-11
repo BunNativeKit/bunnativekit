@@ -1,0 +1,17 @@
+{
+	"name": "create-bnk",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"bin": {
+		"create-bnk": "./src/index.ts"
+	},
+	"scripts": {
+		"dev": "bun run --watch src/index.ts",
+		"check-types": "tsc --noEmit"
+	},
+	"devDependencies": {
+		"@types/bun": "latest",
+		"typescript": "^5.7.2"
+	}
+}

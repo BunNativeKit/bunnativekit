@@ -1,0 +1,6 @@
+{
+  "name": "@internal/toolchain",
+  "entryPoints": ["./src/index.ts"],
+  "tsconfig": "./tsconfig.json",
+  "readme": "none"
+}

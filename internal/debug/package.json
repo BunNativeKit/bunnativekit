@@ -1,0 +1,25 @@
+{
+  "name": "@bunnativekit/debug",
+  "version": "0.0.3",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "bun": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "test": "bun test",
+    "check-types": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@bunnativekit/types": "workspace:*",
+    "@bunnativekit/platform": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.7.2"
+  }
+}

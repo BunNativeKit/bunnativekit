@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "FFISymbolDef",
+    "LoadedModule",
+    "LoadOptions",
+    "ModuleManifest",
+    "ProjectConfig",
+    "RuntimeLoadOptions",
+    "RuntimeModule"
+  ],
+  "title": "Interfaces"
+}

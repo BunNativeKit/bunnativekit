@@ -1,0 +1,8 @@
+{
+  "title": "@bunnativekit/platform",
+  "pages": [
+    "index",
+    "functions",
+    "interfaces"
+  ]
+}

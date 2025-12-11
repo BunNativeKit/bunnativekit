@@ -1,0 +1,30 @@
+{
+	"name": "@bunnativekit/examples",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"basic": "bun run src/basic-add.ts",
+		"safe": "bun run src/safe-usage.ts",
+		"isolation": "bun run src/isolation.ts",
+		"cache": "bun run src/caching.ts",
+		"bench": "bun run src/bench.ts",
+		"all": "bun run basic && bun run safe && bun run cache",
+		"check-types": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@bunnativekit/jit": "workspace:*",
+		"@bunnativekit/types": "workspace:*",
+		"@bunnativekit/cache": "workspace:*",
+		"@bunnativekit/compiler": "workspace:*",
+		"@bunnativekit/debug": "workspace:*",
+		"@bunnativekit/isolation": "workspace:*",
+		"@bunnativekit/platform": "workspace:*",
+		"@bunnativekit/toolchain": "workspace:*",
+		"@tailtag/yapper": "^0.0.1"
+	},
+	"devDependencies": {
+		"@types/bun": "latest",
+		"typescript": "^5.7.2"
+	}
+}

@@ -1,0 +1,9 @@
+{
+  "title": "@bunnativekit/debug",
+  "pages": [
+    "index",
+    "classes",
+    "functions",
+    "interfaces"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "@bunnativekit/jit - JIT Compilation",
+  "entryPoints": ["./src/index.ts"],
+  "tsconfig": "./tsconfig.json",
+  "readme": "none"
+}

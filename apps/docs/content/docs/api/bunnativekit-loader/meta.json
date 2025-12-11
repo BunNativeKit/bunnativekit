@@ -1,0 +1,8 @@
+{
+  "title": "@bunnativekit/loader",
+  "pages": [
+    "index",
+    "functions",
+    "interfaces"
+  ]
+}

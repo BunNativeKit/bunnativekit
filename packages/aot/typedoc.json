@@ -1,0 +1,6 @@
+{
+  "name": "@bunnativekit/aot - AOT Compilation", 
+  "entryPoints": ["./src/index.ts"],
+  "tsconfig": "./tsconfig.json",
+  "readme": "none"
+}

@@ -1,0 +1,9 @@
+{
+  "pages": [
+    "getDiagnostics",
+    "getLogger",
+    "getTracer",
+    "initDebug"
+  ],
+  "title": "Functions"
+}

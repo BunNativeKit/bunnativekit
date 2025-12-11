@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "findConfigFile",
+    "findModules",
+    "findProjectRoot",
+    "loadModuleManifest",
+    "loadProjectConfig",
+    "mergeModuleManifest",
+    "mergeProjectConfig",
+    "resolveIsolationMode",
+    "validateModuleManifest",
+    "validateProjectConfig"
+  ],
+  "title": "Functions"
+}

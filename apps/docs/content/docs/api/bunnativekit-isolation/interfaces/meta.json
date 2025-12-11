@@ -1,0 +1,10 @@
+{
+  "pages": [
+    "IPCLifecycle",
+    "IPCRequest",
+    "IPCResponse",
+    "IsolatedProcessConfig",
+    "IsolatedProcessEvents"
+  ],
+  "title": "Interfaces"
+}

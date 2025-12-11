@@ -1,0 +1,10 @@
+{
+  "title": "bnk",
+  "pages": [
+    "index",
+    "cli",
+    "commands",
+    "index",
+    "utils"
+  ]
+}

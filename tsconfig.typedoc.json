@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "noEmit": true,
+    "lib": ["ESNext"],
+    "baseUrl": ".",
+    "paths": {
+      "@bunnativekit/types": ["./packages/types/src/index.ts"],
+      "@bunnativekit/runtime": ["./packages/runtime/src/index.ts"],
+      "@bunnativekit/jit": ["./packages/jit/src/index.ts"],
+      "@bunnativekit/aot": ["./packages/aot/src/index.ts"],
+      "@internal/compiler": ["./internal/compiler/src/index.ts"],
+      "@internal/loader": ["./internal/loader/src/index.ts"],
+      "@internal/isolation": ["./internal/isolation/src/index.ts"],
+      "@internal/cache": ["./internal/cache/src/index.ts"],
+      "@internal/debug": ["./internal/debug/src/index.ts"],
+      "@internal/platform": ["./internal/platform/src/index.ts"],
+      "@internal/schema": ["./internal/schema/src/index.ts"]
+    }
+  },
+  "include": [
+    "packages/*/src/**/*.ts",
+    "internal/*/src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/dist/**",
+    "**/*.test.ts",
+    "**/*.spec.ts",
+    "apps/**",
+    "tools/**",
+    "scripts/**"
+  ]
+}

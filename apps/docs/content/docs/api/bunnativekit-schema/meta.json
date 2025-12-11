@@ -1,0 +1,8 @@
+{
+  "title": "@bunnativekit/schema",
+  "pages": [
+    "index",
+    "functions",
+    "interfaces"
+  ]
+}

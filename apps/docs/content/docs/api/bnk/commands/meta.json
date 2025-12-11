@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "index",
+    "analyze",
+    "build",
+    "dev",
+    "doctor",
+    "ftcfg",
+    "init",
+    "inspect",
+    "run",
+    "test"
+  ]
+}

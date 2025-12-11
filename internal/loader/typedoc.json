@@ -1,0 +1,6 @@
+{
+  "name": "@internal/loader",
+  "entryPoints": ["./src/index.ts"],
+  "tsconfig": "./tsconfig.json",
+  "readme": "none"
+}

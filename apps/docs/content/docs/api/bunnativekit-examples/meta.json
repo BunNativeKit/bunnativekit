@@ -1,0 +1,13 @@
+{
+  "title": "@bunnativekit/examples",
+  "pages": [
+    "index",
+    "basic-add",
+    "bench",
+    "caching",
+    "isolation",
+    "matmul-jit-vs-bun",
+    "safe-usage",
+    "temporary-zig"
+  ]
+}

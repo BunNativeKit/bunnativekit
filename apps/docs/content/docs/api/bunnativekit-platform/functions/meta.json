@@ -1,0 +1,24 @@
+{
+  "pages": [
+    "commandExists",
+    "getCacheDir",
+    "getCacheSubdir",
+    "getCommandVersion",
+    "getCurrentArch",
+    "getCurrentPlatform",
+    "getCurrentPlatformArch",
+    "getLibPrefix",
+    "getNapiExt",
+    "getPlatformInfo",
+    "getSharedExt",
+    "getToolchainStatus",
+    "getZigTarget",
+    "getZigVersion",
+    "isCI",
+    "isCrossCompile",
+    "isDev",
+    "isProd",
+    "isZigInstalled"
+  ],
+  "title": "Functions"
+}

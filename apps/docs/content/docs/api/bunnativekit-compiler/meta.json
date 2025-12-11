@@ -1,0 +1,10 @@
+{
+  "title": "@bunnativekit/compiler",
+  "pages": [
+    "index",
+    "classes",
+    "functions",
+    "interfaces",
+    "type-aliases"
+  ]
+}
