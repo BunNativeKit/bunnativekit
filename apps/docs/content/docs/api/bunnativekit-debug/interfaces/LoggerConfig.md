@@ -4,7 +4,7 @@ title: LoggerConfig
 
 # Interface: LoggerConfig
 
-Defined in: index.ts:22
+Defined in: [index.ts:22](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L22)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.ts:22
 level: DebugLevel;
 ```
 
-Defined in: index.ts:23
+Defined in: [index.ts:23](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L23)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: index.ts:23
 optional prefix: string;
 ```
 
-Defined in: index.ts:24
+Defined in: [index.ts:24](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L24)
 
 ***
 
@@ -34,4 +34,4 @@ Defined in: index.ts:24
 optional timestamps: boolean;
 ```
 
-Defined in: index.ts:25
+Defined in: [index.ts:25](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L25)

@@ -2,8 +2,8 @@
   "title": "@bunnativekit/types",
   "pages": [
     "index",
-    "functions",
     "interfaces",
+    "functions",
     "type-aliases"
   ]
 }

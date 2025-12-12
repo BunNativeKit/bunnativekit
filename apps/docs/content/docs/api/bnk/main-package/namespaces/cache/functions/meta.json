@@ -1,0 +1,10 @@
+{
+  "pages": [
+    "generateCacheKey",
+    "getBuildCache",
+    "getUnifiedCache",
+    "hashContent",
+    "hashFile"
+  ],
+  "title": "Functions"
+}

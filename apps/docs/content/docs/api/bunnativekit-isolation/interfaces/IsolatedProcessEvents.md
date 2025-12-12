@@ -4,7 +4,7 @@ title: IsolatedProcessEvents
 
 # Interface: IsolatedProcessEvents
 
-Defined in: index.ts:80
+Defined in: [index.ts:80](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/isolation/src/index.ts#L80)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.ts:80
 death: number;
 ```
 
-Defined in: index.ts:83
+Defined in: [index.ts:83](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/isolation/src/index.ts#L83)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: index.ts:83
 error: Error;
 ```
 
-Defined in: index.ts:82
+Defined in: [index.ts:82](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/isolation/src/index.ts#L82)
 
 ***
 
@@ -37,7 +37,7 @@ exit: {
 };
 ```
 
-Defined in: index.ts:84
+Defined in: [index.ts:84](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/isolation/src/index.ts#L84)
 
 #### data?
 
@@ -59,4 +59,4 @@ type: "error" | "success" | "death";
 ready: void;
 ```
 
-Defined in: index.ts:81
+Defined in: [index.ts:81](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/isolation/src/index.ts#L81)

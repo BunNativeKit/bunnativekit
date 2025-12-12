@@ -2,7 +2,7 @@
   "title": "@bunnativekit/aot",
   "pages": [
     "index",
-    "functions",
-    "interfaces"
+    "interfaces",
+    "functions"
   ]
 }

@@ -4,7 +4,7 @@ title: FFISymbolDef
 
 # Interface: FFISymbolDef
 
-Defined in: types/src/index.ts:34
+Defined in: [types/src/index.ts:34](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L34)
 
 FFI symbol definition for dlopen
 
@@ -16,7 +16,7 @@ FFI symbol definition for dlopen
 args: FFITypeString[];
 ```
 
-Defined in: types/src/index.ts:35
+Defined in: [types/src/index.ts:35](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L35)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: types/src/index.ts:35
 optional description: string;
 ```
 
-Defined in: types/src/index.ts:39
+Defined in: [types/src/index.ts:39](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L39)
 
 ***
 
@@ -36,7 +36,7 @@ Defined in: types/src/index.ts:39
 returns: FFITypeString;
 ```
 
-Defined in: types/src/index.ts:36
+Defined in: [types/src/index.ts:36](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L36)
 
 ***
 
@@ -46,6 +46,6 @@ Defined in: types/src/index.ts:36
 optional symbol: string;
 ```
 
-Defined in: types/src/index.ts:38
+Defined in: [types/src/index.ts:38](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L38)
 
 Actual symbol name if different from key

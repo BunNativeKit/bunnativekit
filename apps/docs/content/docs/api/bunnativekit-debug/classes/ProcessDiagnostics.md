@@ -4,7 +4,7 @@ title: ProcessDiagnostics
 
 # Class: ProcessDiagnostics
 
-Defined in: index.ts:232
+Defined in: [index.ts:232](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L232)
 
 ## Constructors
 
@@ -26,7 +26,7 @@ new ProcessDiagnostics(): ProcessDiagnostics;
 getState(pid): ProcessState | null;
 ```
 
-Defined in: index.ts:244
+Defined in: [index.ts:244](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L244)
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: index.ts:244
 
 #### Returns
 
-[`ProcessState`](../interfaces/ProcessState) \| `null`
+[`ProcessState`](../interfaces/ProcessState.md) \| `null`
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: index.ts:244
 getThreads(pid): ThreadInfo[];
 ```
 
-Defined in: index.ts:284
+Defined in: [index.ts:284](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L284)
 
 #### Parameters
 
@@ -56,7 +56,7 @@ Defined in: index.ts:284
 
 #### Returns
 
-[`ThreadInfo`](../interfaces/ThreadInfo)[]
+[`ThreadInfo`](../interfaces/ThreadInfo.md)[]
 
 ***
 
@@ -66,7 +66,7 @@ Defined in: index.ts:284
 isAlive(pid): boolean;
 ```
 
-Defined in: index.ts:239
+Defined in: [index.ts:239](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L239)
 
 #### Parameters
 
@@ -86,7 +86,7 @@ Defined in: index.ts:239
 isSupported(): boolean;
 ```
 
-Defined in: index.ts:235
+Defined in: [index.ts:235](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L235)
 
 #### Returns
 

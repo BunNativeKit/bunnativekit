@@ -4,7 +4,7 @@ title: IPCLifecycle
 
 # Interface: IPCLifecycle
 
-Defined in: index.ts:27
+Defined in: [index.ts:27](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/isolation/src/index.ts#L27)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.ts:27
 optional pid: number;
 ```
 
-Defined in: index.ts:29
+Defined in: [index.ts:29](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/isolation/src/index.ts#L29)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: index.ts:29
 type: "ready" | "shutdown";
 ```
 
-Defined in: index.ts:28
+Defined in: [index.ts:28](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/isolation/src/index.ts#L28)

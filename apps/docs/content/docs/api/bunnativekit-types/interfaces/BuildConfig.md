@@ -4,7 +4,7 @@ title: BuildConfig
 
 # Interface: BuildConfig
 
-Defined in: index.ts:133
+Defined in: [index.ts:133](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L133)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.ts:133
 optional arch: TargetArch;
 ```
 
-Defined in: index.ts:143
+Defined in: [index.ts:143](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L143)
 
 For cross-compilation
 
@@ -26,7 +26,7 @@ For cross-compilation
 optional flags: string[];
 ```
 
-Defined in: index.ts:144
+Defined in: [index.ts:144](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L144)
 
 ***
 
@@ -36,7 +36,7 @@ Defined in: index.ts:144
 optional includes: string[];
 ```
 
-Defined in: index.ts:145
+Defined in: [index.ts:145](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L145)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: index.ts:145
 optional language: SourceLanguage;
 ```
 
-Defined in: index.ts:138
+Defined in: [index.ts:138](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L138)
 
 ***
 
@@ -56,7 +56,7 @@ Defined in: index.ts:138
 optional libPaths: string[];
 ```
 
-Defined in: index.ts:147
+Defined in: [index.ts:147](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L147)
 
 ***
 
@@ -66,7 +66,7 @@ Defined in: index.ts:147
 optional libs: string[];
 ```
 
-Defined in: index.ts:146
+Defined in: [index.ts:146](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L146)
 
 ***
 
@@ -76,7 +76,7 @@ Defined in: index.ts:146
 optional optimization: OptimizationLevel;
 ```
 
-Defined in: index.ts:139
+Defined in: [index.ts:139](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L139)
 
 ***
 
@@ -86,7 +86,7 @@ Defined in: index.ts:139
 optional outDir: string;
 ```
 
-Defined in: index.ts:135
+Defined in: [index.ts:135](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L135)
 
 ***
 
@@ -96,7 +96,7 @@ Defined in: index.ts:135
 optional outName: string;
 ```
 
-Defined in: index.ts:137
+Defined in: [index.ts:137](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L137)
 
 Filename without extension
 
@@ -108,7 +108,7 @@ Filename without extension
 optional platform: TargetPlatform;
 ```
 
-Defined in: index.ts:141
+Defined in: [index.ts:141](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L141)
 
 For cross-compilation
 
@@ -120,4 +120,4 @@ For cross-compilation
 source: string;
 ```
 
-Defined in: index.ts:134
+Defined in: [index.ts:134](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L134)

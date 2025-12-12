@@ -4,7 +4,7 @@ title: CCModule
 
 # Interface: CCModule
 
-Defined in: index.ts:228
+Defined in: [index.ts:228](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/loader/src/index.ts#L228)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.ts:228
 readonly source: string;
 ```
 
-Defined in: index.ts:232
+Defined in: [index.ts:232](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/loader/src/index.ts#L232)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: index.ts:232
 symbols: Record<string, (...args) => unknown>;
 ```
 
-Defined in: index.ts:229
+Defined in: [index.ts:229](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/loader/src/index.ts#L229)
 
 ## Methods
 
@@ -34,7 +34,7 @@ Defined in: index.ts:229
 close(): void;
 ```
 
-Defined in: index.ts:231
+Defined in: [index.ts:231](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/loader/src/index.ts#L231)
 
 #### Returns
 
@@ -48,7 +48,7 @@ Defined in: index.ts:231
 getSymbolNames(): string[];
 ```
 
-Defined in: index.ts:230
+Defined in: [index.ts:230](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/loader/src/index.ts#L230)
 
 #### Returns
 

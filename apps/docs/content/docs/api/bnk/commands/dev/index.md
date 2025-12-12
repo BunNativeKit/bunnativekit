@@ -10,4 +10,4 @@ Development mode with file watching and auto-rebuild.
 
 | Function | Description |
 | ------ | ------ |
-| [createDevCommand](functions/createDevCommand) | - |
+| [createDevCommand](./functions/createDevCommand.md) | - |

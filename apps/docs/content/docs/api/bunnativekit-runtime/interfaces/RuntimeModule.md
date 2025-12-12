@@ -4,13 +4,13 @@ title: RuntimeModule
 
 # Interface: RuntimeModule\<T\>
 
-Defined in: runtime/src/index.ts:36
+Defined in: [runtime/src/index.ts:36](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/runtime/src/index.ts#L36)
 
 A loaded native module
 
 ## Extends
 
-- [`LoadedModule`](LoadedModule)\<`T`\>
+- [`LoadedModule`](./LoadedModule.md)\<`T`\>
 
 ## Type Parameters
 
@@ -26,11 +26,11 @@ A loaded native module
 readonly binding: BindingMethod;
 ```
 
-Defined in: types/src/index.ts:213
+Defined in: [types/src/index.ts:213](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L213)
 
 #### Inherited from
 
-[`LoadedModule`](LoadedModule).[`binding`](LoadedModule#binding)
+[`LoadedModule`](./LoadedModule.md).[`binding`](./LoadedModule.md#binding)
 
 ***
 
@@ -40,11 +40,11 @@ Defined in: types/src/index.ts:213
 readonly isolated: boolean;
 ```
 
-Defined in: types/src/index.ts:214
+Defined in: [types/src/index.ts:214](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L214)
 
 #### Inherited from
 
-[`LoadedModule`](LoadedModule).[`isolated`](LoadedModule#isolated)
+[`LoadedModule`](./LoadedModule.md).[`isolated`](./LoadedModule.md#isolated)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: types/src/index.ts:214
 readonly manifest: ModuleManifest | null;
 ```
 
-Defined in: runtime/src/index.ts:38
+Defined in: [runtime/src/index.ts:38](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/runtime/src/index.ts#L38)
 
 ***
 
@@ -64,11 +64,11 @@ Defined in: runtime/src/index.ts:38
 readonly name: string;
 ```
 
-Defined in: types/src/index.ts:211
+Defined in: [types/src/index.ts:211](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L211)
 
 #### Inherited from
 
-[`LoadedModule`](LoadedModule).[`name`](LoadedModule#name)
+[`LoadedModule`](./LoadedModule.md).[`name`](./LoadedModule.md#name)
 
 ***
 
@@ -78,11 +78,11 @@ Defined in: types/src/index.ts:211
 readonly path: string;
 ```
 
-Defined in: types/src/index.ts:212
+Defined in: [types/src/index.ts:212](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L212)
 
 #### Inherited from
 
-[`LoadedModule`](LoadedModule).[`path`](LoadedModule#path)
+[`LoadedModule`](./LoadedModule.md).[`path`](./LoadedModule.md#path)
 
 ## Methods
 
@@ -92,7 +92,7 @@ Defined in: types/src/index.ts:212
 call<K>(fn, ...args): Promise<ReturnType<T[K] extends (...args) => any ? any[any] : never>>;
 ```
 
-Defined in: types/src/index.ts:216
+Defined in: [types/src/index.ts:216](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L216)
 
 #### Type Parameters
 
@@ -113,7 +113,7 @@ Defined in: types/src/index.ts:216
 
 #### Inherited from
 
-[`LoadedModule`](LoadedModule).[`call`](LoadedModule#call)
+[`LoadedModule`](./LoadedModule.md).[`call`](./LoadedModule.md#call)
 
 ***
 
@@ -123,7 +123,7 @@ Defined in: types/src/index.ts:216
 close(): Promise<void>;
 ```
 
-Defined in: types/src/index.ts:217
+Defined in: [types/src/index.ts:217](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L217)
 
 #### Returns
 
@@ -131,7 +131,7 @@ Defined in: types/src/index.ts:217
 
 #### Inherited from
 
-[`LoadedModule`](LoadedModule).[`close`](LoadedModule#close)
+[`LoadedModule`](./LoadedModule.md).[`close`](./LoadedModule.md#close)
 
 ***
 
@@ -143,7 +143,7 @@ Defined in: types/src/index.ts:217
 on(event, handler): void;
 ```
 
-Defined in: types/src/index.ts:221
+Defined in: [types/src/index.ts:221](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L221)
 
 ##### Parameters
 
@@ -158,7 +158,7 @@ Defined in: types/src/index.ts:221
 
 ##### Inherited from
 
-[`LoadedModule`](LoadedModule).[`on`](LoadedModule#on)
+[`LoadedModule`](./LoadedModule.md).[`on`](./LoadedModule.md#on)
 
 #### Call Signature
 
@@ -166,7 +166,7 @@ Defined in: types/src/index.ts:221
 on(event, handler): void;
 ```
 
-Defined in: types/src/index.ts:222
+Defined in: [types/src/index.ts:222](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L222)
 
 ##### Parameters
 
@@ -181,7 +181,7 @@ Defined in: types/src/index.ts:222
 
 ##### Inherited from
 
-[`LoadedModule`](LoadedModule).[`on`](LoadedModule#on)
+[`LoadedModule`](./LoadedModule.md).[`on`](./LoadedModule.md#on)
 
 #### Call Signature
 
@@ -189,7 +189,7 @@ Defined in: types/src/index.ts:222
 on(event, handler): void;
 ```
 
-Defined in: types/src/index.ts:223
+Defined in: [types/src/index.ts:223](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L223)
 
 ##### Parameters
 
@@ -204,7 +204,7 @@ Defined in: types/src/index.ts:223
 
 ##### Inherited from
 
-[`LoadedModule`](LoadedModule).[`on`](LoadedModule#on)
+[`LoadedModule`](./LoadedModule.md).[`on`](./LoadedModule.md#on)
 
 ***
 
@@ -214,7 +214,7 @@ Defined in: types/src/index.ts:223
 restart(): Promise<void>;
 ```
 
-Defined in: types/src/index.ts:219
+Defined in: [types/src/index.ts:219](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L219)
 
 Only works if isolated
 
@@ -224,4 +224,4 @@ Only works if isolated
 
 #### Inherited from
 
-[`LoadedModule`](LoadedModule).[`restart`](LoadedModule#restart)
+[`LoadedModule`](./LoadedModule.md).[`restart`](./LoadedModule.md#restart)

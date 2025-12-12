@@ -4,7 +4,7 @@ title: BuildCache
 
 # Class: BuildCache
 
-Defined in: cache/src/index.ts:55
+Defined in: [cache/src/index.ts:55](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/cache/src/index.ts#L55)
 
 Manages cached build artifacts with LRU eviction
 
@@ -16,7 +16,7 @@ Manages cached build artifacts with LRU eviction
 new BuildCache(subdir): BuildCache;
 ```
 
-Defined in: cache/src/index.ts:60
+Defined in: [cache/src/index.ts:60](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/cache/src/index.ts#L60)
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: cache/src/index.ts:60
 clear(): void;
 ```
 
-Defined in: cache/src/index.ts:185
+Defined in: [cache/src/index.ts:185](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/cache/src/index.ts#L185)
 
 #### Returns
 
@@ -50,7 +50,7 @@ Defined in: cache/src/index.ts:185
 delete(key): boolean;
 ```
 
-Defined in: cache/src/index.ts:168
+Defined in: [cache/src/index.ts:168](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/cache/src/index.ts#L168)
 
 #### Parameters
 
@@ -70,7 +70,7 @@ Defined in: cache/src/index.ts:168
 get(key): CacheEntry | null;
 ```
 
-Defined in: cache/src/index.ts:87
+Defined in: [cache/src/index.ts:87](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/cache/src/index.ts#L87)
 
 Returns null if entry doesn't exist or file was deleted
 
@@ -82,7 +82,7 @@ Returns null if entry doesn't exist or file was deleted
 
 #### Returns
 
-[`CacheEntry`](../interfaces/CacheEntry) \| `null`
+[`CacheEntry`](../interfaces/CacheEntry.md) \| `null`
 
 ***
 
@@ -92,7 +92,7 @@ Returns null if entry doesn't exist or file was deleted
 getPath(key): string | null;
 ```
 
-Defined in: cache/src/index.ts:107
+Defined in: [cache/src/index.ts:107](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/cache/src/index.ts#L107)
 
 #### Parameters
 
@@ -112,7 +112,7 @@ Defined in: cache/src/index.ts:107
 has(key): boolean;
 ```
 
-Defined in: cache/src/index.ts:103
+Defined in: [cache/src/index.ts:103](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/cache/src/index.ts#L103)
 
 #### Parameters
 
@@ -132,7 +132,7 @@ Defined in: cache/src/index.ts:103
 prune(maxSize): number;
 ```
 
-Defined in: cache/src/index.ts:211
+Defined in: [cache/src/index.ts:211](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/cache/src/index.ts#L211)
 
 Remove oldest entries until under size limit (LRU)
 
@@ -158,7 +158,7 @@ set(
    meta?): CacheEntry;
 ```
 
-Defined in: cache/src/index.ts:113
+Defined in: [cache/src/index.ts:113](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/cache/src/index.ts#L113)
 
 Copy file to cache and track in manifest
 
@@ -173,7 +173,7 @@ Copy file to cache and track in manifest
 
 #### Returns
 
-[`CacheEntry`](../interfaces/CacheEntry)
+[`CacheEntry`](../interfaces/CacheEntry.md)
 
 ***
 
@@ -188,7 +188,7 @@ setContent(
    meta?): CacheEntry;
 ```
 
-Defined in: cache/src/index.ts:142
+Defined in: [cache/src/index.ts:142](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/cache/src/index.ts#L142)
 
 Store raw content directly in cache
 
@@ -204,7 +204,7 @@ Store raw content directly in cache
 
 #### Returns
 
-[`CacheEntry`](../interfaces/CacheEntry)
+[`CacheEntry`](../interfaces/CacheEntry.md)
 
 ***
 
@@ -217,7 +217,7 @@ stats(): {
 };
 ```
 
-Defined in: cache/src/index.ts:191
+Defined in: [cache/src/index.ts:191](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/cache/src/index.ts#L191)
 
 #### Returns
 

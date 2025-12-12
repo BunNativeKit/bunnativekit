@@ -4,7 +4,7 @@ title: CompileOptions
 
 # Interface: CompileOptions
 
-Defined in: index.ts:46
+Defined in: [index.ts:46](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/compiler/src/index.ts#L46)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.ts:46
 optional arch: TargetArch;
 ```
 
-Defined in: index.ts:50
+Defined in: [index.ts:50](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/compiler/src/index.ts#L50)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: index.ts:50
 optional force: boolean;
 ```
 
-Defined in: index.ts:51
+Defined in: [index.ts:51](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/compiler/src/index.ts#L51)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: index.ts:51
 outputDir: string;
 ```
 
-Defined in: index.ts:48
+Defined in: [index.ts:48](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/compiler/src/index.ts#L48)
 
 ***
 
@@ -44,7 +44,7 @@ Defined in: index.ts:48
 optional platform: TargetPlatform;
 ```
 
-Defined in: index.ts:49
+Defined in: [index.ts:49](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/compiler/src/index.ts#L49)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: index.ts:49
 sourceRoot: string;
 ```
 
-Defined in: index.ts:47
+Defined in: [index.ts:47](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/compiler/src/index.ts#L47)
 
 ***
 
@@ -64,4 +64,4 @@ Defined in: index.ts:47
 optional verbose: boolean;
 ```
 
-Defined in: index.ts:52
+Defined in: [index.ts:52](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/compiler/src/index.ts#L52)

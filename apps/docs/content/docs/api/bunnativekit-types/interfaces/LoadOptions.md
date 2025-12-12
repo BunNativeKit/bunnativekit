@@ -4,7 +4,7 @@ title: LoadOptions
 
 # Interface: LoadOptions
 
-Defined in: index.ts:226
+Defined in: [index.ts:226](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L226)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.ts:226
 optional debug: DebugConfig;
 ```
 
-Defined in: index.ts:230
+Defined in: [index.ts:230](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L230)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: index.ts:230
 optional isolation: IsolationMode;
 ```
 
-Defined in: index.ts:228
+Defined in: [index.ts:228](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L228)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: index.ts:228
 optional onError: ErrorMode;
 ```
 
-Defined in: index.ts:227
+Defined in: [index.ts:227](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L227)
 
 ***
 
@@ -44,4 +44,4 @@ Defined in: index.ts:227
 optional timeout: number;
 ```
 
-Defined in: index.ts:229
+Defined in: [index.ts:229](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L229)

@@ -8,10 +8,10 @@ title: Overview
 
 | Module | Description |
 | ------ | ------ |
-| [basic-add](basic-add/index) | - |
-| [bench](bench/index) | - |
-| [caching](caching/index) | - |
-| [isolation](isolation/index) | - |
-| [matmul-jit-vs-bun](matmul-jit-vs-bun/index) | - |
-| [safe-usage](safe-usage/index) | - |
-| [temporary-zig](temporary-zig/index) | - |
+| [basic-add](./basic-add/index.md) | - |
+| [bench](./bench/index.md) | - |
+| [caching](./caching/index.md) | - |
+| [isolation](./isolation/index.md) | - |
+| [matmul-jit-vs-bun](./matmul-jit-vs-bun/index.md) | - |
+| [safe-usage](./safe-usage/index.md) | - |
+| [temporary-zig](./temporary-zig/index.md) | - |

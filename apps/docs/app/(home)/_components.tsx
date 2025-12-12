@@ -2,17 +2,17 @@ import type { ReactNode } from 'react';
 
 export function PageShell(props: { children: ReactNode }) {
   return (
-    <main className="flex-1 p-8 md:p-16">
-      <div className="max-w-5xl mx-auto space-y-24">{props.children}</div>
+    <main className="flex-1 p-5 sm:p-8 md:p-16">
+      <div className="max-w-5xl mx-auto space-y-16 md:space-y-24">{props.children}</div>
     </main>
   );
 }
 
 export function Hero(props: { title: ReactNode; subtitle: ReactNode }) {
   return (
-    <header className="space-y-6">
-      <h1 className="text-7xl md:text-8xl font-black">{props.title}</h1>
-      <p className="text-3xl md:text-4xl font-light text-neutral-600">{props.subtitle}</p>
+    <header className="space-y-4 md:space-y-6">
+      <h1 className="text-5xl sm:text-7xl md:text-8xl font-black">{props.title}</h1>
+      <p className="text-2xl sm:text-3xl md:text-4xl font-light text-neutral-600">{props.subtitle}</p>
     </header>
   );
 }

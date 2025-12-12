@@ -4,7 +4,7 @@ title: Logger
 
 # Class: Logger
 
-Defined in: index.ts:28
+Defined in: [index.ts:28](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L28)
 
 ## Constructors
 
@@ -14,13 +14,13 @@ Defined in: index.ts:28
 new Logger(config): Logger;
 ```
 
-Defined in: index.ts:32
+Defined in: [index.ts:32](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L32)
 
 #### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
-| `config` | `Partial`\<[`LoggerConfig`](../interfaces/LoggerConfig)\> |
+| `config` | `Partial`\<[`LoggerConfig`](../interfaces/LoggerConfig.md)\> |
 
 #### Returns
 
@@ -37,7 +37,7 @@ debug(
    data?): void;
 ```
 
-Defined in: index.ts:85
+Defined in: [index.ts:85](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L85)
 
 #### Parameters
 
@@ -62,7 +62,7 @@ error(
    data?): void;
 ```
 
-Defined in: index.ts:73
+Defined in: [index.ts:73](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L73)
 
 #### Parameters
 
@@ -87,7 +87,7 @@ info(
    data?): void;
 ```
 
-Defined in: index.ts:81
+Defined in: [index.ts:81](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L81)
 
 #### Parameters
 
@@ -112,7 +112,7 @@ trace(
    data?): void;
 ```
 
-Defined in: index.ts:89
+Defined in: [index.ts:89](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L89)
 
 #### Parameters
 
@@ -137,7 +137,7 @@ warn(
    data?): void;
 ```
 
-Defined in: index.ts:77
+Defined in: [index.ts:77](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L77)
 
 #### Parameters
 

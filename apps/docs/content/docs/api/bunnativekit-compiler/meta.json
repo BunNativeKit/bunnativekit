@@ -2,9 +2,9 @@
   "title": "@bunnativekit/compiler",
   "pages": [
     "index",
-    "classes",
-    "functions",
     "interfaces",
+    "functions",
+    "classes",
     "type-aliases"
   ]
 }

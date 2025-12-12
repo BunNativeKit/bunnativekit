@@ -1,12 +1,14 @@
 {
-  "title": "API Ref",
+  "title": "API Reference",
   "pages": [
-    "index",
+    "---Apps---",
     "bnk",
+    "---Packages---",
     "bunnativekit-aot",
     "bunnativekit-jit",
     "bunnativekit-runtime",
     "bunnativekit-types",
+    "---Internal---",
     "bunnativekit-loader",
     "bunnativekit-platform",
     "bunnativekit-cache",

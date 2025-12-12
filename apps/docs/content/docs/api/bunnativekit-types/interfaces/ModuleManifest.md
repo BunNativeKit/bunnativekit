@@ -4,7 +4,7 @@ title: ModuleManifest
 
 # Interface: ModuleManifest
 
-Defined in: index.ts:162
+Defined in: [index.ts:162](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L162)
 
 Describes a BNK native module
 
@@ -16,7 +16,7 @@ Describes a BNK native module
 optional author: string;
 ```
 
-Defined in: index.ts:168
+Defined in: [index.ts:168](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L168)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: index.ts:168
 optional binding: BindingConfig;
 ```
 
-Defined in: index.ts:172
+Defined in: [index.ts:172](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L172)
 
 ***
 
@@ -36,7 +36,7 @@ Defined in: index.ts:172
 optional description: string;
 ```
 
-Defined in: index.ts:167
+Defined in: [index.ts:167](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L167)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: index.ts:167
 entry: string;
 ```
 
-Defined in: index.ts:166
+Defined in: [index.ts:166](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L166)
 
 Source file path
 
@@ -61,7 +61,7 @@ optional isolation: {
 };
 ```
 
-Defined in: index.ts:174
+Defined in: [index.ts:174](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L174)
 
 #### required?
 
@@ -85,7 +85,7 @@ Use worker thread instead of subprocess
 optional license: string;
 ```
 
-Defined in: index.ts:169
+Defined in: [index.ts:169](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L169)
 
 ***
 
@@ -95,7 +95,7 @@ Defined in: index.ts:169
 optional maxCompat: string;
 ```
 
-Defined in: index.ts:190
+Defined in: [index.ts:190](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L190)
 
 Max compatible BNK version
 
@@ -107,7 +107,7 @@ Max compatible BNK version
 optional minCompat: string;
 ```
 
-Defined in: index.ts:188
+Defined in: [index.ts:188](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L188)
 
 Min compatible BNK version
 
@@ -119,7 +119,7 @@ Min compatible BNK version
 name: string;
 ```
 
-Defined in: index.ts:163
+Defined in: [index.ts:163](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L163)
 
 ***
 
@@ -129,7 +129,7 @@ Defined in: index.ts:163
 optional napiExports: Record<string, NAPISymbolDef>;
 ```
 
-Defined in: index.ts:183
+Defined in: [index.ts:183](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L183)
 
 NAPI exports (when binding is napi)
 
@@ -147,7 +147,7 @@ optional prebuilt: Partial<Record<
 | "windows-arm64", string>>;
 ```
 
-Defined in: index.ts:185
+Defined in: [index.ts:185](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L185)
 
 Prebuilt binaries per platform
 
@@ -159,7 +159,7 @@ Prebuilt binaries per platform
 optional repository: string;
 ```
 
-Defined in: index.ts:170
+Defined in: [index.ts:170](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L170)
 
 ***
 
@@ -169,7 +169,7 @@ Defined in: index.ts:170
 optional requiredBins: string[];
 ```
 
-Defined in: index.ts:192
+Defined in: [index.ts:192](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L192)
 
 Required system binaries (e.g., "zig", "clang")
 
@@ -181,7 +181,7 @@ Required system binaries (e.g., "zig", "clang")
 optional symbols: Record<string, FFISymbolDef>;
 ```
 
-Defined in: index.ts:181
+Defined in: [index.ts:181](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L181)
 
 FFI symbol definitions
 
@@ -193,4 +193,4 @@ FFI symbol definitions
 version: string;
 ```
 
-Defined in: index.ts:164
+Defined in: [index.ts:164](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L164)

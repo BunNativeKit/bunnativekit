@@ -11,6 +11,7 @@
     "lint": "biome check",
     "format": "biome format --write",
     "lint:links": "bun run scripts/lint-links.ts",
+    "fix:links": "bun run ../../scripts/fix-docs-links.ts",
     "docs:generate": "bun run ../../../lazydocs/src/cli/index.ts generate",
     "docs:watch": "bun run ../../../lazydocs/src/cli/index.ts watch"
   },

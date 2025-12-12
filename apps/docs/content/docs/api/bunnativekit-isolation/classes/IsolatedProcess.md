@@ -4,13 +4,13 @@ title: IsolatedProcess
 
 # Class: IsolatedProcess
 
-Defined in: index.ts:90
+Defined in: [index.ts:90](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/isolation/src/index.ts#L90)
 
 Runs native code in an isolated subprocess with IPC
 
 ## Extends
 
-- [`EventEmitter`](EventEmitter)\<[`IsolatedProcessEvents`](../interfaces/IsolatedProcessEvents)\>
+- [`EventEmitter`](./EventEmitter.md)\<[`IsolatedProcessEvents`](../interfaces/IsolatedProcessEvents.md)\>
 
 ## Constructors
 
@@ -20,13 +20,13 @@ Runs native code in an isolated subprocess with IPC
 new IsolatedProcess(config): IsolatedProcess;
 ```
 
-Defined in: index.ts:104
+Defined in: [index.ts:104](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/isolation/src/index.ts#L104)
 
 #### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
-| `config` | [`IsolatedProcessConfig`](../interfaces/IsolatedProcessConfig) |
+| `config` | [`IsolatedProcessConfig`](../interfaces/IsolatedProcessConfig.md) |
 
 #### Returns
 
@@ -34,7 +34,7 @@ Defined in: index.ts:104
 
 #### Overrides
 
-[`EventEmitter`](EventEmitter).[`constructor`](EventEmitter#constructor)
+[`EventEmitter`](./EventEmitter.md).[`constructor`](./EventEmitter.md#constructor)
 
 ## Methods
 
@@ -44,7 +44,7 @@ Defined in: index.ts:104
 call<T>(fn, ...args): Promise<T>;
 ```
 
-Defined in: index.ts:154
+Defined in: [index.ts:154](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/isolation/src/index.ts#L154)
 
 #### Type Parameters
 
@@ -71,20 +71,20 @@ Defined in: index.ts:154
 emit<K>(event, data): void;
 ```
 
-Defined in: index.ts:52
+Defined in: [index.ts:52](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/isolation/src/index.ts#L52)
 
 #### Type Parameters
 
 | Type Parameter |
 | ------ |
-| `K` *extends* keyof [`IsolatedProcessEvents`](../interfaces/IsolatedProcessEvents) |
+| `K` *extends* keyof [`IsolatedProcessEvents`](../interfaces/IsolatedProcessEvents.md) |
 
 #### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `event` | `K` |
-| `data` | [`IsolatedProcessEvents`](../interfaces/IsolatedProcessEvents)\[`K`\] |
+| `data` | [`IsolatedProcessEvents`](../interfaces/IsolatedProcessEvents.md)\[`K`\] |
 
 #### Returns
 
@@ -92,7 +92,7 @@ Defined in: index.ts:52
 
 #### Inherited from
 
-[`EventEmitter`](EventEmitter).[`emit`](EventEmitter#emit)
+[`EventEmitter`](./EventEmitter.md).[`emit`](./EventEmitter.md#emit)
 
 ***
 
@@ -102,7 +102,7 @@ Defined in: index.ts:52
 isAlive(): boolean;
 ```
 
-Defined in: index.ts:226
+Defined in: [index.ts:226](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/isolation/src/index.ts#L226)
 
 #### Returns
 
@@ -116,20 +116,20 @@ Defined in: index.ts:226
 off<K>(event, handler): void;
 ```
 
-Defined in: index.ts:48
+Defined in: [index.ts:48](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/isolation/src/index.ts#L48)
 
 #### Type Parameters
 
 | Type Parameter |
 | ------ |
-| `K` *extends* keyof [`IsolatedProcessEvents`](../interfaces/IsolatedProcessEvents) |
+| `K` *extends* keyof [`IsolatedProcessEvents`](../interfaces/IsolatedProcessEvents.md) |
 
 #### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `event` | `K` |
-| `handler` | [`EventHandler`](../type-aliases/EventHandler)\<[`IsolatedProcessEvents`](../interfaces/IsolatedProcessEvents)\[`K`\]\> |
+| `handler` | [`EventHandler`](../type-aliases/EventHandler.md)\<[`IsolatedProcessEvents`](../interfaces/IsolatedProcessEvents.md)\[`K`\]\> |
 
 #### Returns
 
@@ -137,7 +137,7 @@ Defined in: index.ts:48
 
 #### Inherited from
 
-[`EventEmitter`](EventEmitter).[`off`](EventEmitter#off)
+[`EventEmitter`](./EventEmitter.md).[`off`](./EventEmitter.md#off)
 
 ***
 
@@ -147,20 +147,20 @@ Defined in: index.ts:48
 on<K>(event, handler): void;
 ```
 
-Defined in: index.ts:41
+Defined in: [index.ts:41](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/isolation/src/index.ts#L41)
 
 #### Type Parameters
 
 | Type Parameter |
 | ------ |
-| `K` *extends* keyof [`IsolatedProcessEvents`](../interfaces/IsolatedProcessEvents) |
+| `K` *extends* keyof [`IsolatedProcessEvents`](../interfaces/IsolatedProcessEvents.md) |
 
 #### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `event` | `K` |
-| `handler` | [`EventHandler`](../type-aliases/EventHandler)\<[`IsolatedProcessEvents`](../interfaces/IsolatedProcessEvents)\[`K`\]\> |
+| `handler` | [`EventHandler`](../type-aliases/EventHandler.md)\<[`IsolatedProcessEvents`](../interfaces/IsolatedProcessEvents.md)\[`K`\]\> |
 
 #### Returns
 
@@ -168,7 +168,7 @@ Defined in: index.ts:41
 
 #### Inherited from
 
-[`EventEmitter`](EventEmitter).[`on`](EventEmitter#on)
+[`EventEmitter`](./EventEmitter.md).[`on`](./EventEmitter.md#on)
 
 ***
 
@@ -178,7 +178,7 @@ Defined in: index.ts:41
 removeAllListeners(): void;
 ```
 
-Defined in: index.ts:62
+Defined in: [index.ts:62](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/isolation/src/index.ts#L62)
 
 #### Returns
 
@@ -186,7 +186,7 @@ Defined in: index.ts:62
 
 #### Inherited from
 
-[`EventEmitter`](EventEmitter).[`removeAllListeners`](EventEmitter#removealllisteners)
+[`EventEmitter`](./EventEmitter.md).[`removeAllListeners`](./EventEmitter.md#removealllisteners)
 
 ***
 
@@ -196,7 +196,7 @@ Defined in: index.ts:62
 restart(): Promise<void>;
 ```
 
-Defined in: index.ts:217
+Defined in: [index.ts:217](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/isolation/src/index.ts#L217)
 
 #### Returns
 
@@ -210,7 +210,7 @@ Defined in: index.ts:217
 shutdown(): Promise<void>;
 ```
 
-Defined in: index.ts:199
+Defined in: [index.ts:199](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/isolation/src/index.ts#L199)
 
 #### Returns
 
@@ -224,7 +224,7 @@ Defined in: index.ts:199
 start(): Promise<void>;
 ```
 
-Defined in: index.ts:119
+Defined in: [index.ts:119](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/isolation/src/index.ts#L119)
 
 #### Returns
 

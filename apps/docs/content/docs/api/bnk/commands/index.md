@@ -10,52 +10,52 @@ CLI command exports for the bnk tool.
 
 ### createAnalyzeCommand
 
-Re-exports [createAnalyzeCommand](analyze/functions/createAnalyzeCommand)
+Re-exports [createAnalyzeCommand](./analyze/functions/createAnalyzeCommand.md)
 
 ***
 
 ### createBuildCommand
 
-Re-exports [createBuildCommand](build/functions/createBuildCommand)
+Re-exports [createBuildCommand](./build/functions/createBuildCommand.md)
 
 ***
 
 ### createDevCommand
 
-Re-exports [createDevCommand](dev/functions/createDevCommand)
+Re-exports [createDevCommand](./dev/functions/createDevCommand.md)
 
 ***
 
 ### createDoctorCommand
 
-Re-exports [createDoctorCommand](doctor/functions/createDoctorCommand)
+Re-exports [createDoctorCommand](./doctor/functions/createDoctorCommand.md)
 
 ***
 
 ### createFtcfgCommand
 
-Re-exports [createFtcfgCommand](ftcfg/functions/createFtcfgCommand)
+Re-exports [createFtcfgCommand](./ftcfg/functions/createFtcfgCommand.md)
 
 ***
 
 ### createInitCommand
 
-Re-exports [createInitCommand](init/functions/createInitCommand)
+Re-exports [createInitCommand](./init/functions/createInitCommand.md)
 
 ***
 
 ### createInspectCommand
 
-Re-exports [createInspectCommand](inspect/functions/createInspectCommand)
+Re-exports [createInspectCommand](./inspect/functions/createInspectCommand.md)
 
 ***
 
 ### createRunCommand
 
-Re-exports [createRunCommand](run/functions/createRunCommand)
+Re-exports [createRunCommand](./run/functions/createRunCommand.md)
 
 ***
 
 ### createTestCommand
 
-Re-exports [createTestCommand](test/functions/createTestCommand)
+Re-exports [createTestCommand](./test/functions/createTestCommand.md)

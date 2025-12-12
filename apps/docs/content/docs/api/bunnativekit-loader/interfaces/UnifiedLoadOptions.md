@@ -4,7 +4,7 @@ title: UnifiedLoadOptions
 
 # Interface: UnifiedLoadOptions
 
-Defined in: index.ts:306
+Defined in: [index.ts:306](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/loader/src/index.ts#L306)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.ts:306
 binding: BindingMethod;
 ```
 
-Defined in: index.ts:309
+Defined in: [index.ts:309](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/loader/src/index.ts#L309)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: index.ts:309
 optional ccConfig: Omit<CCLoadOptions, "source">;
 ```
 
-Defined in: index.ts:313
+Defined in: [index.ts:313](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/loader/src/index.ts#L313)
 
 Required for cc binding
 
@@ -36,7 +36,7 @@ Required for cc binding
 optional debug: boolean;
 ```
 
-Defined in: index.ts:314
+Defined in: [index.ts:314](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/loader/src/index.ts#L314)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: index.ts:314
 optional ffiSymbols: Record<string, FFISymbolDef>;
 ```
 
-Defined in: index.ts:311
+Defined in: [index.ts:311](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/loader/src/index.ts#L311)
 
 Required for ffi binding
 
@@ -58,6 +58,6 @@ Required for ffi binding
 path: string;
 ```
 
-Defined in: index.ts:308
+Defined in: [index.ts:308](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/loader/src/index.ts#L308)
 
 Path to module, or C source for cc binding

@@ -10,4 +10,4 @@ Run scripts with optional isolation harness for native calls.
 
 | Function | Description |
 | ------ | ------ |
-| [createRunCommand](functions/createRunCommand) | - |
+| [createRunCommand](./functions/createRunCommand.md) | - |

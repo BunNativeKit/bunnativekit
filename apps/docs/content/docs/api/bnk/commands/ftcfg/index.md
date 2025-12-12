@@ -10,4 +10,4 @@ First-time configuration: install Zig and set up environment.
 
 | Function | Description |
 | ------ | ------ |
-| [createFtcfgCommand](functions/createFtcfgCommand) | - |
+| [createFtcfgCommand](./functions/createFtcfgCommand.md) | - |

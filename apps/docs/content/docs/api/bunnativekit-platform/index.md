@@ -10,7 +10,7 @@ Platform detection, toolchain management, and cache directory utilities.
 
 | Interface | Description |
 | ------ | ------ |
-| [ToolchainStatus](interfaces/ToolchainStatus) | - |
+| [ToolchainStatus](./interfaces/ToolchainStatus.md) | - |
 
 ## Variables
 
@@ -20,28 +20,28 @@ Platform detection, toolchain management, and cache directory utilities.
 const PLATFORMS: Record<TargetPlatform, PlatformInfo>;
 ```
 
-Defined in: index.ts:45
+Defined in: [index.ts:45](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/platform/src/index.ts#L45)
 
 ## Functions
 
 | Function | Description |
 | ------ | ------ |
-| [commandExists](functions/commandExists) | - |
-| [getCacheDir](functions/getCacheDir) | Returns ~/.cache/bunnativekit (or platform equivalent), creating it if needed |
-| [getCacheSubdir](functions/getCacheSubdir) | - |
-| [getCommandVersion](functions/getCommandVersion) | - |
-| [getCurrentArch](functions/getCurrentArch) | - |
-| [getCurrentPlatform](functions/getCurrentPlatform) | - |
-| [getCurrentPlatformArch](functions/getCurrentPlatformArch) | - |
-| [getLibPrefix](functions/getLibPrefix) | - |
-| [getNapiExt](functions/getNapiExt) | - |
-| [getPlatformInfo](functions/getPlatformInfo) | - |
-| [getSharedExt](functions/getSharedExt) | - |
-| [getToolchainStatus](functions/getToolchainStatus) | - |
-| [getZigTarget](functions/getZigTarget) | - |
-| [getZigVersion](functions/getZigVersion) | - |
-| [isCI](functions/isCI) | - |
-| [isCrossCompile](functions/isCrossCompile) | - |
-| [isDev](functions/isDev) | - |
-| [isProd](functions/isProd) | - |
-| [isZigInstalled](functions/isZigInstalled) | - |
+| [commandExists](./functions/commandExists.md) | - |
+| [getCacheDir](./functions/getCacheDir.md) | Returns ~/.cache/bunnativekit (or platform equivalent), creating it if needed |
+| [getCacheSubdir](./functions/getCacheSubdir.md) | - |
+| [getCommandVersion](./functions/getCommandVersion.md) | - |
+| [getCurrentArch](./functions/getCurrentArch.md) | - |
+| [getCurrentPlatform](./functions/getCurrentPlatform.md) | - |
+| [getCurrentPlatformArch](./functions/getCurrentPlatformArch.md) | - |
+| [getLibPrefix](./functions/getLibPrefix.md) | - |
+| [getNapiExt](./functions/getNapiExt.md) | - |
+| [getPlatformInfo](./functions/getPlatformInfo.md) | - |
+| [getSharedExt](./functions/getSharedExt.md) | - |
+| [getToolchainStatus](./functions/getToolchainStatus.md) | - |
+| [getZigTarget](./functions/getZigTarget.md) | - |
+| [getZigVersion](./functions/getZigVersion.md) | - |
+| [isCI](./functions/isCI.md) | - |
+| [isCrossCompile](./functions/isCrossCompile.md) | - |
+| [isDev](./functions/isDev.md) | - |
+| [isProd](./functions/isProd.md) | - |
+| [isZigInstalled](./functions/isZigInstalled.md) | - |

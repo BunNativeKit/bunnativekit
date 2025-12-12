@@ -19,14 +19,14 @@ const result = await jit.zig(`
 
 | Class | Description |
 | ------ | ------ |
-| [SafeResult](classes/SafeResult) | Result type for safe error handling |
+| [SafeResult](./classes/SafeResult.md) | Result type for safe error handling |
 
 ## Interfaces
 
 | Interface | Description |
 | ------ | ------ |
-| [CompileOptions](interfaces/CompileOptions) | - |
-| [InlineOptions](interfaces/InlineOptions) | - |
+| [CompileOptions](./interfaces/CompileOptions.md) | - |
+| [InlineOptions](./interfaces/InlineOptions.md) | - |
 
 ## Variables
 
@@ -53,7 +53,7 @@ const jit: {
 };
 ```
 
-Defined in: jit/src/index.ts:785
+Defined in: [jit/src/index.ts:785](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/jit/src/index.ts#L785)
 
 #### Type Declaration
 
@@ -100,7 +100,7 @@ Compile native code just-in-time. Symbols parsed from source if not provided.
 
 | Parameter | Type |
 | ------ | ------ |
-| `options` | [`CompileOptions`](interfaces/CompileOptions) |
+| `options` | [`CompileOptions`](./interfaces/CompileOptions.md) |
 
 ###### Returns
 
@@ -254,7 +254,7 @@ safeC: (source, ...args) => Promise<SafeResult<unknown, Error>>;
 
 ###### Returns
 
-`Promise`\<[`SafeResult`](classes/SafeResult)\<`unknown`, `Error`\>\>
+`Promise`\<[`SafeResult`](./classes/SafeResult.md)\<`unknown`, `Error`\>\>
 
 ##### safeCpp()
 
@@ -271,7 +271,7 @@ safeCpp: (source, ...args) => Promise<SafeResult<unknown, Error>>;
 
 ###### Returns
 
-`Promise`\<[`SafeResult`](classes/SafeResult)\<`unknown`, `Error`\>\>
+`Promise`\<[`SafeResult`](./classes/SafeResult.md)\<`unknown`, `Error`\>\>
 
 ##### safeRust()
 
@@ -288,7 +288,7 @@ safeRust: (source, ...args) => Promise<SafeResult<unknown, Error>>;
 
 ###### Returns
 
-`Promise`\<[`SafeResult`](classes/SafeResult)\<`unknown`, `Error`\>\>
+`Promise`\<[`SafeResult`](./classes/SafeResult.md)\<`unknown`, `Error`\>\>
 
 ##### safeZig()
 
@@ -307,7 +307,7 @@ Execute Zig safely, returning a SafeResult
 
 ###### Returns
 
-`Promise`\<[`SafeResult`](classes/SafeResult)\<`unknown`, `Error`\>\>
+`Promise`\<[`SafeResult`](./classes/SafeResult.md)\<`unknown`, `Error`\>\>
 
 ##### zig()
 
@@ -351,23 +351,23 @@ Tagged template for Zig - parses symbols automatically
 
 | Function | Description |
 | ------ | ------ |
-| [clearCache](functions/clearCache) | Clear the JIT memory cache and close all modules |
-| [compileJIT](functions/compileJIT) | Compile native code just-in-time. Symbols parsed from source if not provided. |
-| [cppTemplate](functions/cppTemplate) | Tagged template for C++ - parses symbols automatically |
-| [cTemplate](functions/cTemplate) | Tagged template for C - parses symbols automatically |
-| [getCacheSize](functions/getCacheSize) | Get current memory cache size |
-| [inlineC](functions/inlineC) | Execute inline C code - calls the `main` function with args |
-| [inlineCpp](functions/inlineCpp) | Execute inline C++ code - calls the `main` function with args |
-| [inlineRust](functions/inlineRust) | Execute inline Rust code - calls #[no_mangle] extern "C" fn main with args |
-| [inlineZig](functions/inlineZig) | Execute inline Zig code - calls the `main` function with args |
-| [parseSymbols](functions/parseSymbols) | Parse source code and extract FFI symbols |
-| [rustTemplate](functions/rustTemplate) | Tagged template for Rust - parses symbols automatically |
-| [safeC](functions/safeC) | - |
-| [safeCpp](functions/safeCpp) | - |
-| [safeRust](functions/safeRust) | - |
-| [safeUse](functions/safeUse) | Wrap a value or promise in a SafeResult |
-| [safeZig](functions/safeZig) | Execute Zig safely, returning a SafeResult |
-| [zigTemplate](functions/zigTemplate) | Tagged template for Zig - parses symbols automatically |
+| [clearCache](./functions/clearCache.md) | Clear the JIT memory cache and close all modules |
+| [compileJIT](./functions/compileJIT.md) | Compile native code just-in-time. Symbols parsed from source if not provided. |
+| [cppTemplate](./functions/cppTemplate.md) | Tagged template for C++ - parses symbols automatically |
+| [cTemplate](./functions/cTemplate.md) | Tagged template for C - parses symbols automatically |
+| [getCacheSize](./functions/getCacheSize.md) | Get current memory cache size |
+| [inlineC](./functions/inlineC.md) | Execute inline C code - calls the `main` function with args |
+| [inlineCpp](./functions/inlineCpp.md) | Execute inline C++ code - calls the `main` function with args |
+| [inlineRust](./functions/inlineRust.md) | Execute inline Rust code - calls #[no_mangle] extern "C" fn main with args |
+| [inlineZig](./functions/inlineZig.md) | Execute inline Zig code - calls the `main` function with args |
+| [parseSymbols](./functions/parseSymbols.md) | Parse source code and extract FFI symbols |
+| [rustTemplate](./functions/rustTemplate.md) | Tagged template for Rust - parses symbols automatically |
+| [safeC](./functions/safeC.md) | - |
+| [safeCpp](./functions/safeCpp.md) | - |
+| [safeRust](./functions/safeRust.md) | - |
+| [safeUse](./functions/safeUse.md) | Wrap a value or promise in a SafeResult |
+| [safeZig](./functions/safeZig.md) | Execute Zig safely, returning a SafeResult |
+| [zigTemplate](./functions/zigTemplate.md) | Tagged template for Zig - parses symbols automatically |
 
 ## References
 

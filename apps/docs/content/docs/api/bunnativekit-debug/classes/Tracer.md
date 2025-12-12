@@ -4,7 +4,7 @@ title: Tracer
 
 # Class: Tracer
 
-Defined in: index.ts:113
+Defined in: [index.ts:113](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L113)
 
 ## Constructors
 
@@ -14,13 +14,13 @@ Defined in: index.ts:113
 new Tracer(config): Tracer;
 ```
 
-Defined in: index.ts:118
+Defined in: [index.ts:118](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L118)
 
 #### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
-| `config` | `Partial`\<[`TracerConfig`](../interfaces/TracerConfig)\> |
+| `config` | `Partial`\<[`TracerConfig`](../interfaces/TracerConfig.md)\> |
 
 #### Returns
 
@@ -36,7 +36,7 @@ Defined in: index.ts:118
 get enabled(): boolean;
 ```
 
-Defined in: index.ts:127
+Defined in: [index.ts:127](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L127)
 
 ##### Returns
 
@@ -50,7 +50,7 @@ Defined in: index.ts:127
 clear(): void;
 ```
 
-Defined in: index.ts:185
+Defined in: [index.ts:185](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L185)
 
 #### Returns
 
@@ -68,7 +68,7 @@ event(
    args?): void;
 ```
 
-Defined in: index.ts:136
+Defined in: [index.ts:136](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L136)
 
 #### Parameters
 
@@ -91,7 +91,7 @@ Defined in: index.ts:136
 flush(): void;
 ```
 
-Defined in: index.ts:191
+Defined in: [index.ts:191](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L191)
 
 Write events to configured output path
 
@@ -107,11 +107,11 @@ Write events to configured output path
 getEvents(): TraceEvent[];
 ```
 
-Defined in: index.ts:181
+Defined in: [index.ts:181](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L181)
 
 #### Returns
 
-[`TraceEvent`](../interfaces/TraceEvent)[]
+[`TraceEvent`](../interfaces/TraceEvent.md)[]
 
 ***
 
@@ -124,7 +124,7 @@ start(
    args?): () => void;
 ```
 
-Defined in: index.ts:160
+Defined in: [index.ts:160](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L160)
 
 Start a duration trace, returns a function to end it
 

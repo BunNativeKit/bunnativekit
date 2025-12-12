@@ -10,7 +10,7 @@ title: SafeUse
 function safeUse<T>(valueOrPromise): SafeResult<T, Error>;
 ```
 
-Defined in: jit/src/index.ts:720
+Defined in: [jit/src/index.ts:720](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/jit/src/index.ts#L720)
 
 Wrap a value or promise in a SafeResult
 
@@ -28,7 +28,7 @@ Wrap a value or promise in a SafeResult
 
 ### Returns
 
-[`SafeResult`](../classes/SafeResult)\<`T`, `Error`\>
+[`SafeResult`](../classes/SafeResult.md)\<`T`, `Error`\>
 
 ## Call Signature
 
@@ -36,7 +36,7 @@ Wrap a value or promise in a SafeResult
 function safeUse<T>(valueOrPromise): Promise<SafeResult<T, Error>>;
 ```
 
-Defined in: jit/src/index.ts:721
+Defined in: [jit/src/index.ts:721](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/jit/src/index.ts#L721)
 
 Wrap a value or promise in a SafeResult
 
@@ -54,4 +54,4 @@ Wrap a value or promise in a SafeResult
 
 ### Returns
 
-`Promise`\<[`SafeResult`](../classes/SafeResult)\<`T`, `Error`\>\>
+`Promise`\<[`SafeResult`](../classes/SafeResult.md)\<`T`, `Error`\>\>

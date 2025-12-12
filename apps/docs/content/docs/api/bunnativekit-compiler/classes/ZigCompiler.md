@@ -4,7 +4,7 @@ title: ZigCompiler
 
 # Class: ZigCompiler
 
-Defined in: index.ts:57
+Defined in: [index.ts:57](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/compiler/src/index.ts#L57)
 
 ## Constructors
 
@@ -26,14 +26,14 @@ new ZigCompiler(): ZigCompiler;
 buildCommand(config, options): string[];
 ```
 
-Defined in: index.ts:76
+Defined in: [index.ts:76](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/compiler/src/index.ts#L76)
 
 #### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `config` | `BuildConfig` |
-| `options` | [`CompileOptions`](../interfaces/CompileOptions) |
+| `options` | [`CompileOptions`](../interfaces/CompileOptions.md) |
 
 #### Returns
 
@@ -47,14 +47,14 @@ Defined in: index.ts:76
 compile(config, options): Promise<BuildResult>;
 ```
 
-Defined in: index.ts:125
+Defined in: [index.ts:125](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/compiler/src/index.ts#L125)
 
 #### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `config` | `BuildConfig` |
-| `options` | [`CompileOptions`](../interfaces/CompileOptions) |
+| `options` | [`CompileOptions`](../interfaces/CompileOptions.md) |
 
 #### Returns
 
@@ -68,7 +68,7 @@ Defined in: index.ts:125
 getVersion(): Promise<string | null>;
 ```
 
-Defined in: index.ts:62
+Defined in: [index.ts:62](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/compiler/src/index.ts#L62)
 
 #### Returns
 
@@ -82,7 +82,7 @@ Defined in: index.ts:62
 isAvailable(): Promise<boolean>;
 ```
 
-Defined in: index.ts:58
+Defined in: [index.ts:58](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/compiler/src/index.ts#L58)
 
 #### Returns
 

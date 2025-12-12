@@ -1,0 +1,9 @@
+{
+  "pages": [
+    "index",
+    "classes",
+    "functions",
+    "interfaces",
+    "type-aliases"
+  ]
+}

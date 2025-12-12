@@ -4,7 +4,7 @@ title: BuildResult
 
 # Interface: BuildResult
 
-Defined in: index.ts:150
+Defined in: [index.ts:150](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L150)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.ts:150
 optional durationMs: number;
 ```
 
-Defined in: index.ts:153
+Defined in: [index.ts:153](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L153)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: index.ts:153
 optional error: string;
 ```
 
-Defined in: index.ts:154
+Defined in: [index.ts:154](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L154)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: index.ts:154
 optional outputPath: string;
 ```
 
-Defined in: index.ts:152
+Defined in: [index.ts:152](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L152)
 
 ***
 
@@ -44,7 +44,7 @@ Defined in: index.ts:152
 optional stderr: string;
 ```
 
-Defined in: index.ts:156
+Defined in: [index.ts:156](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L156)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: index.ts:156
 optional stdout: string;
 ```
 
-Defined in: index.ts:155
+Defined in: [index.ts:155](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L155)
 
 ***
 
@@ -64,4 +64,4 @@ Defined in: index.ts:155
 success: boolean;
 ```
 
-Defined in: index.ts:151
+Defined in: [index.ts:151](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L151)

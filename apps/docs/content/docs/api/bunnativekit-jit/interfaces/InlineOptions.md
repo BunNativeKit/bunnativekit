@@ -4,7 +4,7 @@ title: InlineOptions
 
 # Interface: InlineOptions
 
-Defined in: jit/src/index.ts:37
+Defined in: [jit/src/index.ts:37](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/jit/src/index.ts#L37)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: jit/src/index.ts:37
 optional cache: boolean;
 ```
 
-Defined in: jit/src/index.ts:39
+Defined in: [jit/src/index.ts:39](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/jit/src/index.ts#L39)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: jit/src/index.ts:39
 optional isolation: IsolationMode;
 ```
 
-Defined in: jit/src/index.ts:38
+Defined in: [jit/src/index.ts:38](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/jit/src/index.ts#L38)

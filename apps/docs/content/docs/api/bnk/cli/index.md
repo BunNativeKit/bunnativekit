@@ -10,4 +10,4 @@ Command-line interface for BunNativeKit.
 
 | Function | Description |
 | ------ | ------ |
-| [runCLI](functions/runCLI) | Run the CLI programmatically with the given arguments |
+| [runCLI](./functions/runCLI.md) | Run the CLI programmatically with the given arguments |

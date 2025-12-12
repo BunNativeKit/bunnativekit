@@ -10,4 +10,4 @@ Check toolchain status and diagnose environment issues.
 
 | Function | Description |
 | ------ | ------ |
-| [createDoctorCommand](functions/createDoctorCommand) | - |
+| [createDoctorCommand](./functions/createDoctorCommand.md) | - |

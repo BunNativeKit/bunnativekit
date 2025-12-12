@@ -2,7 +2,7 @@
   "title": "@bunnativekit/schema",
   "pages": [
     "index",
-    "functions",
-    "interfaces"
+    "interfaces",
+    "functions"
   ]
 }

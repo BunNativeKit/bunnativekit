@@ -4,7 +4,7 @@ title: AOTResult
 
 # Interface: AOTResult
 
-Defined in: index.ts:259
+Defined in: [index.ts:259](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L259)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.ts:259
 optional error: string;
 ```
 
-Defined in: index.ts:266
+Defined in: [index.ts:266](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L266)
 
 ***
 
@@ -28,7 +28,7 @@ outputs: {
 };
 ```
 
-Defined in: index.ts:261
+Defined in: [index.ts:261](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L261)
 
 #### library
 
@@ -56,4 +56,4 @@ optional types: string;
 success: boolean;
 ```
 
-Defined in: index.ts:260
+Defined in: [index.ts:260](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L260)

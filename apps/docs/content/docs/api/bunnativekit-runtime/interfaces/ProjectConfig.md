@@ -4,7 +4,7 @@ title: ProjectConfig
 
 # Interface: ProjectConfig
 
-Defined in: types/src/index.ts:197
+Defined in: [types/src/index.ts:197](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L197)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: types/src/index.ts:197
 optional build: Partial<BuildConfig>;
 ```
 
-Defined in: types/src/index.ts:204
+Defined in: [types/src/index.ts:204](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L204)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: types/src/index.ts:204
 optional cache: CacheConfig;
 ```
 
-Defined in: types/src/index.ts:199
+Defined in: [types/src/index.ts:199](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L199)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: types/src/index.ts:199
 optional debug: DebugConfig;
 ```
 
-Defined in: types/src/index.ts:200
+Defined in: [types/src/index.ts:200](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L200)
 
 ***
 
@@ -44,7 +44,7 @@ Defined in: types/src/index.ts:200
 optional isolation: IsolationMode;
 ```
 
-Defined in: types/src/index.ts:198
+Defined in: [types/src/index.ts:198](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L198)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: types/src/index.ts:198
 optional modules: string[];
 ```
 
-Defined in: types/src/index.ts:203
+Defined in: [types/src/index.ts:203](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L203)
 
 Module paths to build
 
@@ -66,4 +66,4 @@ Module paths to build
 optional onError: ErrorMode;
 ```
 
-Defined in: types/src/index.ts:201
+Defined in: [types/src/index.ts:201](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L201)

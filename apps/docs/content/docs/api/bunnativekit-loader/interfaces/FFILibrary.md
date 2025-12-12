@@ -4,7 +4,7 @@ title: FFILibrary
 
 # Interface: FFILibrary
 
-Defined in: index.ts:65
+Defined in: [index.ts:65](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/loader/src/index.ts#L65)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.ts:65
 readonly path: string;
 ```
 
-Defined in: index.ts:69
+Defined in: [index.ts:69](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/loader/src/index.ts#L69)
 
 ## Methods
 
@@ -24,7 +24,7 @@ Defined in: index.ts:69
 call<T>(name, ...args): T;
 ```
 
-Defined in: index.ts:66
+Defined in: [index.ts:66](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/loader/src/index.ts#L66)
 
 #### Type Parameters
 
@@ -51,7 +51,7 @@ Defined in: index.ts:66
 close(): void;
 ```
 
-Defined in: index.ts:68
+Defined in: [index.ts:68](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/loader/src/index.ts#L68)
 
 #### Returns
 
@@ -65,7 +65,7 @@ Defined in: index.ts:68
 getSymbolNames(): string[];
 ```
 
-Defined in: index.ts:67
+Defined in: [index.ts:67](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/loader/src/index.ts#L67)
 
 #### Returns
 

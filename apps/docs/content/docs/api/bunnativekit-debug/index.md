@@ -10,25 +10,25 @@ Logging, Chrome DevTools tracing, and Linux process diagnostics.
 
 | Class | Description |
 | ------ | ------ |
-| [Logger](classes/Logger) | - |
-| [ProcessDiagnostics](classes/ProcessDiagnostics) | - |
-| [Tracer](classes/Tracer) | - |
+| [Logger](./classes/Logger.md) | - |
+| [ProcessDiagnostics](./classes/ProcessDiagnostics.md) | - |
+| [Tracer](./classes/Tracer.md) | - |
 
 ## Interfaces
 
 | Interface | Description |
 | ------ | ------ |
-| [LoggerConfig](interfaces/LoggerConfig) | - |
-| [ProcessState](interfaces/ProcessState) | - |
-| [ThreadInfo](interfaces/ThreadInfo) | - |
-| [TraceEvent](interfaces/TraceEvent) | - |
-| [TracerConfig](interfaces/TracerConfig) | - |
+| [LoggerConfig](./interfaces/LoggerConfig.md) | - |
+| [ProcessState](./interfaces/ProcessState.md) | - |
+| [ThreadInfo](./interfaces/ThreadInfo.md) | - |
+| [TraceEvent](./interfaces/TraceEvent.md) | - |
+| [TracerConfig](./interfaces/TracerConfig.md) | - |
 
 ## Functions
 
 | Function | Description |
 | ------ | ------ |
-| [getDiagnostics](functions/getDiagnostics) | - |
-| [getLogger](functions/getLogger) | - |
-| [getTracer](functions/getTracer) | - |
-| [initDebug](functions/initDebug) | Initialize logger and tracer from a config object |
+| [getDiagnostics](./functions/getDiagnostics.md) | - |
+| [getLogger](./functions/getLogger.md) | - |
+| [getTracer](./functions/getTracer.md) | - |
+| [initDebug](./functions/initDebug.md) | Initialize logger and tracer from a config object |

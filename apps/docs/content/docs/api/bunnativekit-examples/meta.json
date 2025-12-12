@@ -2,12 +2,12 @@
   "title": "@bunnativekit/examples",
   "pages": [
     "index",
-    "basic-add",
-    "bench",
-    "caching",
-    "isolation",
     "matmul-jit-vs-bun",
+    "basic-add",
     "safe-usage",
-    "temporary-zig"
+    "bench",
+    "temporary-zig",
+    "isolation",
+    "caching"
   ]
 }

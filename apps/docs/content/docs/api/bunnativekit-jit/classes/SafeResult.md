@@ -4,7 +4,7 @@ title: SafeResult
 
 # Class: SafeResult\<T, E\>
 
-Defined in: jit/src/index.ts:663
+Defined in: [jit/src/index.ts:663](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/jit/src/index.ts#L663)
 
 Result type for safe error handling
 
@@ -25,7 +25,7 @@ Result type for safe error handling
 get error(): E | undefined;
 ```
 
-Defined in: jit/src/index.ts:714
+Defined in: [jit/src/index.ts:714](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/jit/src/index.ts#L714)
 
 ##### Returns
 
@@ -41,7 +41,7 @@ Defined in: jit/src/index.ts:714
 get value(): T | undefined;
 ```
 
-Defined in: jit/src/index.ts:710
+Defined in: [jit/src/index.ts:710](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/jit/src/index.ts#L710)
 
 ##### Returns
 
@@ -55,7 +55,7 @@ Defined in: jit/src/index.ts:710
 isError(): this is SafeResult<never, E>;
 ```
 
-Defined in: jit/src/index.ts:681
+Defined in: [jit/src/index.ts:681](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/jit/src/index.ts#L681)
 
 #### Returns
 
@@ -69,7 +69,7 @@ Defined in: jit/src/index.ts:681
 isOk(): this is SafeResult<T, never>;
 ```
 
-Defined in: jit/src/index.ts:677
+Defined in: [jit/src/index.ts:677](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/jit/src/index.ts#L677)
 
 #### Returns
 
@@ -83,7 +83,7 @@ Defined in: jit/src/index.ts:677
 map<U>(fn): SafeResult<U, E>;
 ```
 
-Defined in: jit/src/index.ts:703
+Defined in: [jit/src/index.ts:703](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/jit/src/index.ts#L703)
 
 #### Type Parameters
 
@@ -109,7 +109,7 @@ Defined in: jit/src/index.ts:703
 unwrap(): T;
 ```
 
-Defined in: jit/src/index.ts:685
+Defined in: [jit/src/index.ts:685](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/jit/src/index.ts#L685)
 
 #### Returns
 
@@ -123,7 +123,7 @@ Defined in: jit/src/index.ts:685
 unwrapErr(): E;
 ```
 
-Defined in: jit/src/index.ts:696
+Defined in: [jit/src/index.ts:696](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/jit/src/index.ts#L696)
 
 #### Returns
 
@@ -137,7 +137,7 @@ Defined in: jit/src/index.ts:696
 unwrapOr(defaultValue): T;
 ```
 
-Defined in: jit/src/index.ts:692
+Defined in: [jit/src/index.ts:692](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/jit/src/index.ts#L692)
 
 #### Parameters
 
@@ -157,7 +157,7 @@ Defined in: jit/src/index.ts:692
 static err<E>(error): SafeResult<never, E>;
 ```
 
-Defined in: jit/src/index.ts:673
+Defined in: [jit/src/index.ts:673](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/jit/src/index.ts#L673)
 
 #### Type Parameters
 
@@ -183,7 +183,7 @@ Defined in: jit/src/index.ts:673
 static ok<T>(value): SafeResult<T, never>;
 ```
 
-Defined in: jit/src/index.ts:669
+Defined in: [jit/src/index.ts:669](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/jit/src/index.ts#L669)
 
 #### Type Parameters
 

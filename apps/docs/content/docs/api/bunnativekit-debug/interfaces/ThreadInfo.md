@@ -4,7 +4,7 @@ title: ThreadInfo
 
 # Interface: ThreadInfo
 
-Defined in: index.ts:216
+Defined in: [index.ts:216](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L216)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.ts:216
 name: string;
 ```
 
-Defined in: index.ts:218
+Defined in: [index.ts:218](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L218)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: index.ts:218
 state: string;
 ```
 
-Defined in: index.ts:219
+Defined in: [index.ts:219](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L219)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: index.ts:219
 tid: number;
 ```
 
-Defined in: index.ts:217
+Defined in: [index.ts:217](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L217)
 
 ***
 
@@ -44,4 +44,4 @@ Defined in: index.ts:217
 optional waitChannel: string;
 ```
 
-Defined in: index.ts:220
+Defined in: [index.ts:220](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L220)

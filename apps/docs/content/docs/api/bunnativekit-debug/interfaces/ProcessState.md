@@ -4,7 +4,7 @@ title: ProcessState
 
 # Interface: ProcessState
 
-Defined in: index.ts:206
+Defined in: [index.ts:206](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L206)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.ts:206
 alive: boolean;
 ```
 
-Defined in: index.ts:207
+Defined in: [index.ts:207](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L207)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: index.ts:207
 rssBytes: number;
 ```
 
-Defined in: index.ts:212
+Defined in: [index.ts:212](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L212)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: index.ts:212
 state: string;
 ```
 
-Defined in: index.ts:208
+Defined in: [index.ts:208](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L208)
 
 ***
 
@@ -44,7 +44,7 @@ Defined in: index.ts:208
 stateDescription: string;
 ```
 
-Defined in: index.ts:209
+Defined in: [index.ts:209](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L209)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: index.ts:209
 threadCount: number;
 ```
 
-Defined in: index.ts:210
+Defined in: [index.ts:210](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L210)
 
 ***
 
@@ -64,7 +64,7 @@ Defined in: index.ts:210
 vmsBytes: number;
 ```
 
-Defined in: index.ts:213
+Defined in: [index.ts:213](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L213)
 
 ***
 
@@ -74,4 +74,4 @@ Defined in: index.ts:213
 optional waitChannel: string;
 ```
 
-Defined in: index.ts:211
+Defined in: [index.ts:211](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L211)

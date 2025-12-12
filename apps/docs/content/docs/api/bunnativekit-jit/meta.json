@@ -2,8 +2,8 @@
   "title": "@bunnativekit/jit",
   "pages": [
     "index",
-    "classes",
+    "interfaces",
     "functions",
-    "interfaces"
+    "classes"
   ]
 }

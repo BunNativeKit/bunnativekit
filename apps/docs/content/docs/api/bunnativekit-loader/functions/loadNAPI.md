@@ -8,7 +8,7 @@ title: LoadNAPI
 function loadNAPI<T>(options): NAPIModule<T>;
 ```
 
-Defined in: index.ts:154
+Defined in: [index.ts:154](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/loader/src/index.ts#L154)
 
 Load a native addon (.node file) via NAPI
 
@@ -22,8 +22,8 @@ Load a native addon (.node file) via NAPI
 
 | Parameter | Type |
 | ------ | ------ |
-| `options` | [`NAPILoadOptions`](../interfaces/NAPILoadOptions) |
+| `options` | [`NAPILoadOptions`](../interfaces/NAPILoadOptions.md) |
 
 ## Returns
 
-[`NAPIModule`](../interfaces/NAPIModule)\<`T`\>
+[`NAPIModule`](../interfaces/NAPIModule.md)\<`T`\>

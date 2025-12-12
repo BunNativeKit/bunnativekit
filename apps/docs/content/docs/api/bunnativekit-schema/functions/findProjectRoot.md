@@ -8,7 +8,7 @@ title: FindProjectRoot
 function findProjectRoot(startDir): string | null;
 ```
 
-Defined in: index.ts:158
+Defined in: [index.ts:158](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/schema/src/index.ts#L158)
 
 Find project root (directory containing bnk.config.ts)
 

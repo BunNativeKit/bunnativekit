@@ -10,4 +10,4 @@ Initialize a new BunNativeKit project with templates.
 
 | Function | Description |
 | ------ | ------ |
-| [createInitCommand](functions/createInitCommand) | - |
+| [createInitCommand](./functions/createInitCommand.md) | - |

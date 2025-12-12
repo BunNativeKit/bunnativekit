@@ -4,7 +4,7 @@ title: LoadedModule
 
 # Interface: LoadedModule\<T\>
 
-Defined in: index.ts:210
+Defined in: [index.ts:210](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L210)
 
 A loaded native module
 
@@ -22,7 +22,7 @@ A loaded native module
 readonly binding: BindingMethod;
 ```
 
-Defined in: index.ts:213
+Defined in: [index.ts:213](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L213)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: index.ts:213
 readonly isolated: boolean;
 ```
 
-Defined in: index.ts:214
+Defined in: [index.ts:214](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L214)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: index.ts:214
 readonly name: string;
 ```
 
-Defined in: index.ts:211
+Defined in: [index.ts:211](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L211)
 
 ***
 
@@ -52,7 +52,7 @@ Defined in: index.ts:211
 readonly path: string;
 ```
 
-Defined in: index.ts:212
+Defined in: [index.ts:212](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L212)
 
 ## Methods
 
@@ -62,7 +62,7 @@ Defined in: index.ts:212
 call<K>(fn, ...args): Promise<ReturnType<T[K] extends (...args) => any ? any[any] : never>>;
 ```
 
-Defined in: index.ts:216
+Defined in: [index.ts:216](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L216)
 
 #### Type Parameters
 
@@ -89,7 +89,7 @@ Defined in: index.ts:216
 close(): Promise<void>;
 ```
 
-Defined in: index.ts:217
+Defined in: [index.ts:217](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L217)
 
 #### Returns
 
@@ -105,7 +105,7 @@ Defined in: index.ts:217
 on(event, handler): void;
 ```
 
-Defined in: index.ts:221
+Defined in: [index.ts:221](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L221)
 
 ##### Parameters
 
@@ -124,7 +124,7 @@ Defined in: index.ts:221
 on(event, handler): void;
 ```
 
-Defined in: index.ts:222
+Defined in: [index.ts:222](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L222)
 
 ##### Parameters
 
@@ -143,7 +143,7 @@ Defined in: index.ts:222
 on(event, handler): void;
 ```
 
-Defined in: index.ts:223
+Defined in: [index.ts:223](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L223)
 
 ##### Parameters
 
@@ -164,7 +164,7 @@ Defined in: index.ts:223
 restart(): Promise<void>;
 ```
 
-Defined in: index.ts:219
+Defined in: [index.ts:219](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L219)
 
 Only works if isolated
 

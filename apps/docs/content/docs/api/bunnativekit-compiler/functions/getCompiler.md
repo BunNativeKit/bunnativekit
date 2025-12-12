@@ -8,7 +8,7 @@ title: GetCompiler
 function getCompiler(language): Compiler;
 ```
 
-Defined in: index.ts:497
+Defined in: [index.ts:497](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/compiler/src/index.ts#L497)
 
 ## Parameters
 
@@ -18,4 +18,4 @@ Defined in: index.ts:497
 
 ## Returns
 
-[`Compiler`](../type-aliases/Compiler)
+[`Compiler`](../type-aliases/Compiler.md)

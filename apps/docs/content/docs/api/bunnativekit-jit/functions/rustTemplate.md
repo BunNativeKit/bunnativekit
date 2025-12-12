@@ -8,7 +8,7 @@ title: RustTemplate
 function rustTemplate(strings, ...values): Promise<JITModule>;
 ```
 
-Defined in: jit/src/index.ts:628
+Defined in: [jit/src/index.ts:628](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/jit/src/index.ts#L628)
 
 Tagged template for Rust - parses symbols automatically
 

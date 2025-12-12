@@ -34,7 +34,7 @@ export default function HomePage() {
           />
           <FeatureBlurb label="Runtime" body="Load pre-built binaries. Consistent API across platforms." />
           
-          <div className="flex gap-8 text-xl pt-16">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-8 text-lg sm:text-xl pt-8 md:pt-16">
             <Link href="/docs" className="hover:underline">
               Documentation →
             </Link>
@@ -362,7 +362,7 @@ console.log({ zig, c, cpp, rust });`}
         </div>
       </StackSection>
 
-      <footer className="flex gap-8 text-xl pt-8 border-t">
+      <footer className="flex flex-col sm:flex-row gap-4 sm:gap-8 text-lg sm:text-xl pt-8 border-t">
         <Link href="/docs" className="hover:underline">
           Documentation →
         </Link>

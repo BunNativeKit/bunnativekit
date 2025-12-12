@@ -4,11 +4,11 @@ title: RuntimeLoadOptions
 
 # Interface: RuntimeLoadOptions
 
-Defined in: runtime/src/index.ts:26
+Defined in: [runtime/src/index.ts:26](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/runtime/src/index.ts#L26)
 
 ## Extends
 
-- [`LoadOptions`](LoadOptions)
+- [`LoadOptions`](./LoadOptions.md)
 
 ## Properties
 
@@ -18,11 +18,11 @@ Defined in: runtime/src/index.ts:26
 optional debug: DebugConfig;
 ```
 
-Defined in: types/src/index.ts:230
+Defined in: [types/src/index.ts:230](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L230)
 
 #### Inherited from
 
-[`LoadOptions`](LoadOptions).[`debug`](LoadOptions#debug)
+[`LoadOptions`](./LoadOptions.md).[`debug`](./LoadOptions.md#debug)
 
 ***
 
@@ -32,11 +32,11 @@ Defined in: types/src/index.ts:230
 optional isolation: IsolationMode;
 ```
 
-Defined in: types/src/index.ts:228
+Defined in: [types/src/index.ts:228](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L228)
 
 #### Inherited from
 
-[`LoadOptions`](LoadOptions).[`isolation`](LoadOptions#isolation)
+[`LoadOptions`](./LoadOptions.md).[`isolation`](./LoadOptions.md#isolation)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: types/src/index.ts:228
 optional libraryPath: string;
 ```
 
-Defined in: runtime/src/index.ts:31
+Defined in: [runtime/src/index.ts:31](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/runtime/src/index.ts#L31)
 
 Required when skipManifest is true
 
@@ -58,7 +58,7 @@ Required when skipManifest is true
 module: string;
 ```
 
-Defined in: runtime/src/index.ts:27
+Defined in: [runtime/src/index.ts:27](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/runtime/src/index.ts#L27)
 
 ***
 
@@ -68,11 +68,11 @@ Defined in: runtime/src/index.ts:27
 optional onError: ErrorMode;
 ```
 
-Defined in: types/src/index.ts:227
+Defined in: [types/src/index.ts:227](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L227)
 
 #### Inherited from
 
-[`LoadOptions`](LoadOptions).[`onError`](LoadOptions#onerror)
+[`LoadOptions`](./LoadOptions.md).[`onError`](./LoadOptions.md#onerror)
 
 ***
 
@@ -82,7 +82,7 @@ Defined in: types/src/index.ts:227
 optional skipManifest: boolean;
 ```
 
-Defined in: runtime/src/index.ts:29
+Defined in: [runtime/src/index.ts:29](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/runtime/src/index.ts#L29)
 
 Skip manifest and load library directly
 
@@ -94,7 +94,7 @@ Skip manifest and load library directly
 optional symbols: Record<string, FFISymbolDef>;
 ```
 
-Defined in: runtime/src/index.ts:33
+Defined in: [runtime/src/index.ts:33](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/runtime/src/index.ts#L33)
 
 Required when skipManifest is true
 
@@ -106,8 +106,8 @@ Required when skipManifest is true
 optional timeout: number;
 ```
 
-Defined in: types/src/index.ts:229
+Defined in: [types/src/index.ts:229](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L229)
 
 #### Inherited from
 
-[`LoadOptions`](LoadOptions).[`timeout`](LoadOptions#timeout)
+[`LoadOptions`](./LoadOptions.md).[`timeout`](./LoadOptions.md#timeout)

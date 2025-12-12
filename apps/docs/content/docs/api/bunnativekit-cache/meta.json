@@ -2,8 +2,8 @@
   "title": "@bunnativekit/cache",
   "pages": [
     "index",
-    "classes",
+    "interfaces",
     "functions",
-    "interfaces"
+    "classes"
   ]
 }

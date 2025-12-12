@@ -10,4 +10,4 @@ Run TypeScript and native Zig tests with isolation support.
 
 | Function | Description |
 | ------ | ------ |
-| [createTestCommand](functions/createTestCommand) | - |
+| [createTestCommand](./functions/createTestCommand.md) | - |

@@ -10,4 +10,4 @@ Build native modules from Zig, C, or C++ source.
 
 | Function | Description |
 | ------ | ------ |
-| [createBuildCommand](functions/createBuildCommand) | - |
+| [createBuildCommand](./functions/createBuildCommand.md) | - |

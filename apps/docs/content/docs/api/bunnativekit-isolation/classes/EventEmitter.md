@@ -4,11 +4,11 @@ title: EventEmitter
 
 # Class: EventEmitter\<Events\>
 
-Defined in: index.ts:38
+Defined in: [index.ts:38](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/isolation/src/index.ts#L38)
 
 ## Extended by
 
-- [`IsolatedProcess`](IsolatedProcess)
+- [`IsolatedProcess`](./IsolatedProcess.md)
 
 ## Type Parameters
 
@@ -36,7 +36,7 @@ new EventEmitter<Events>(): EventEmitter<Events>;
 emit<K>(event, data): void;
 ```
 
-Defined in: index.ts:52
+Defined in: [index.ts:52](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/isolation/src/index.ts#L52)
 
 #### Type Parameters
 
@@ -63,7 +63,7 @@ Defined in: index.ts:52
 off<K>(event, handler): void;
 ```
 
-Defined in: index.ts:48
+Defined in: [index.ts:48](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/isolation/src/index.ts#L48)
 
 #### Type Parameters
 
@@ -76,7 +76,7 @@ Defined in: index.ts:48
 | Parameter | Type |
 | ------ | ------ |
 | `event` | `K` |
-| `handler` | [`EventHandler`](../type-aliases/EventHandler)\<`Events`\[`K`\]\> |
+| `handler` | [`EventHandler`](../type-aliases/EventHandler.md)\<`Events`\[`K`\]\> |
 
 #### Returns
 
@@ -90,7 +90,7 @@ Defined in: index.ts:48
 on<K>(event, handler): void;
 ```
 
-Defined in: index.ts:41
+Defined in: [index.ts:41](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/isolation/src/index.ts#L41)
 
 #### Type Parameters
 
@@ -103,7 +103,7 @@ Defined in: index.ts:41
 | Parameter | Type |
 | ------ | ------ |
 | `event` | `K` |
-| `handler` | [`EventHandler`](../type-aliases/EventHandler)\<`Events`\[`K`\]\> |
+| `handler` | [`EventHandler`](../type-aliases/EventHandler.md)\<`Events`\[`K`\]\> |
 
 #### Returns
 
@@ -117,7 +117,7 @@ Defined in: index.ts:41
 removeAllListeners(): void;
 ```
 
-Defined in: index.ts:62
+Defined in: [index.ts:62](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/isolation/src/index.ts#L62)
 
 #### Returns
 

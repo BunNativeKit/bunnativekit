@@ -10,4 +10,4 @@ Inspect native modules: symbols, memory layout, dependencies.
 
 | Function | Description |
 | ------ | ------ |
-| [createInspectCommand](functions/createInspectCommand) | - |
+| [createInspectCommand](./functions/createInspectCommand.md) | - |

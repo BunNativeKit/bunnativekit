@@ -4,7 +4,7 @@ title: TracerConfig
 
 # Interface: TracerConfig
 
-Defined in: index.ts:107
+Defined in: [index.ts:107](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L107)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.ts:107
 enabled: boolean;
 ```
 
-Defined in: index.ts:108
+Defined in: [index.ts:108](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L108)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: index.ts:108
 optional maxEvents: number;
 ```
 
-Defined in: index.ts:110
+Defined in: [index.ts:110](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L110)
 
 ***
 
@@ -34,4 +34,4 @@ Defined in: index.ts:110
 optional outputPath: string;
 ```
 
-Defined in: index.ts:109
+Defined in: [index.ts:109](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/debug/src/index.ts#L109)

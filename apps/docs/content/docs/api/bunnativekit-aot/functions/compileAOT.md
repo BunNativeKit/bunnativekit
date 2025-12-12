@@ -8,7 +8,7 @@ title: CompileAOT
 function compileAOT(options): Promise<AOTResult>;
 ```
 
-Defined in: aot/src/index.ts:34
+Defined in: [aot/src/index.ts:34](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/aot/src/index.ts#L34)
 
 Compile native code ahead-of-time with TypeScript declarations
 
@@ -16,7 +16,7 @@ Compile native code ahead-of-time with TypeScript declarations
 
 | Parameter | Type |
 | ------ | ------ |
-| `options` | [`AOTCompileOptions`](../interfaces/AOTCompileOptions) |
+| `options` | [`AOTCompileOptions`](../interfaces/AOTCompileOptions.md) |
 
 ## Returns
 

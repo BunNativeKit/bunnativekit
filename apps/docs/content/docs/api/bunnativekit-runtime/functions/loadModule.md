@@ -8,7 +8,7 @@ title: LoadModule
 function loadModule<T>(options): Promise<RuntimeModule<T>>;
 ```
 
-Defined in: runtime/src/index.ts:75
+Defined in: [runtime/src/index.ts:75](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/runtime/src/index.ts#L75)
 
 Load a native module from path or manifest
 
@@ -22,8 +22,8 @@ Load a native module from path or manifest
 
 | Parameter | Type |
 | ------ | ------ |
-| `options` | [`RuntimeLoadOptions`](../interfaces/RuntimeLoadOptions) |
+| `options` | [`RuntimeLoadOptions`](../interfaces/RuntimeLoadOptions.md) |
 
 ## Returns
 
-`Promise`\<[`RuntimeModule`](../interfaces/RuntimeModule)\<`T`\>\>
+`Promise`\<[`RuntimeModule`](../interfaces/RuntimeModule.md)\<`T`\>\>

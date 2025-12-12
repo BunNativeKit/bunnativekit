@@ -4,7 +4,7 @@ title: AOTOptions
 
 # Interface: AOTOptions
 
-Defined in: index.ts:251
+Defined in: [index.ts:251](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L251)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.ts:251
 optional build: Partial<BuildConfig>;
 ```
 
-Defined in: index.ts:256
+Defined in: [index.ts:256](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L256)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: index.ts:256
 optional generateTypes: boolean;
 ```
 
-Defined in: index.ts:254
+Defined in: [index.ts:254](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L254)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: index.ts:254
 output: string;
 ```
 
-Defined in: index.ts:253
+Defined in: [index.ts:253](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L253)
 
 ***
 
@@ -44,7 +44,7 @@ Defined in: index.ts:253
 source: string;
 ```
 
-Defined in: index.ts:252
+Defined in: [index.ts:252](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L252)
 
 ***
 
@@ -54,4 +54,4 @@ Defined in: index.ts:252
 optional watch: boolean;
 ```
 
-Defined in: index.ts:255
+Defined in: [index.ts:255](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L255)

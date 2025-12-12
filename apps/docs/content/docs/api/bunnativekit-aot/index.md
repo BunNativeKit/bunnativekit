@@ -11,7 +11,7 @@ Supports watch mode, cross-compilation, and build caching.
 
 | Interface | Description |
 | ------ | ------ |
-| [AOTCompileOptions](interfaces/AOTCompileOptions) | - |
+| [AOTCompileOptions](./interfaces/AOTCompileOptions.md) | - |
 
 ## Variables
 
@@ -24,7 +24,7 @@ const aot: {
 };
 ```
 
-Defined in: aot/src/index.ts:277
+Defined in: [aot/src/index.ts:277](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/aot/src/index.ts#L277)
 
 #### Type Declaration
 
@@ -40,7 +40,7 @@ Compile native code ahead-of-time with TypeScript declarations
 
 | Parameter | Type |
 | ------ | ------ |
-| `options` | [`AOTCompileOptions`](interfaces/AOTCompileOptions) |
+| `options` | [`AOTCompileOptions`](./interfaces/AOTCompileOptions.md) |
 
 ###### Returns
 
@@ -69,8 +69,8 @@ Generate TypeScript declarations from symbol definitions
 
 | Function | Description |
 | ------ | ------ |
-| [compileAOT](functions/compileAOT) | Compile native code ahead-of-time with TypeScript declarations |
-| [generateTypeDeclarations](functions/generateTypeDeclarations) | Generate TypeScript declarations from symbol definitions |
+| [compileAOT](./functions/compileAOT.md) | Compile native code ahead-of-time with TypeScript declarations |
+| [generateTypeDeclarations](./functions/generateTypeDeclarations.md) | Generate TypeScript declarations from symbol definitions |
 
 ## References
 

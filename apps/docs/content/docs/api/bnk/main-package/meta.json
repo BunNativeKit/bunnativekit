@@ -1,0 +1,10 @@
+{
+  "title": "Main Package",
+  "pages": [
+    "classes",
+    "functions",
+    "interfaces",
+    "namespaces",
+    "type-aliases"
+  ]
+}

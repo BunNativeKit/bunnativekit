@@ -4,7 +4,7 @@ title: ZigCC
 
 # Class: ZigCC
 
-Defined in: index.ts:190
+Defined in: [index.ts:190](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/compiler/src/index.ts#L190)
 
 Uses Zig's bundled clang for C/C++ compilation
 
@@ -16,7 +16,7 @@ Uses Zig's bundled clang for C/C++ compilation
 new ZigCC(mode): ZigCC;
 ```
 
-Defined in: index.ts:193
+Defined in: [index.ts:193](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/compiler/src/index.ts#L193)
 
 #### Parameters
 
@@ -36,14 +36,14 @@ Defined in: index.ts:193
 buildCommand(config, options): string[];
 ```
 
-Defined in: index.ts:201
+Defined in: [index.ts:201](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/compiler/src/index.ts#L201)
 
 #### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `config` | `BuildConfig` |
-| `options` | [`CompileOptions`](../interfaces/CompileOptions) |
+| `options` | [`CompileOptions`](../interfaces/CompileOptions.md) |
 
 #### Returns
 
@@ -57,14 +57,14 @@ Defined in: index.ts:201
 compile(config, options): Promise<BuildResult>;
 ```
 
-Defined in: index.ts:258
+Defined in: [index.ts:258](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/compiler/src/index.ts#L258)
 
 #### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `config` | `BuildConfig` |
-| `options` | [`CompileOptions`](../interfaces/CompileOptions) |
+| `options` | [`CompileOptions`](../interfaces/CompileOptions.md) |
 
 #### Returns
 
@@ -78,7 +78,7 @@ Defined in: index.ts:258
 isAvailable(): Promise<boolean>;
 ```
 
-Defined in: index.ts:197
+Defined in: [index.ts:197](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/compiler/src/index.ts#L197)
 
 #### Returns
 

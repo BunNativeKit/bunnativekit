@@ -1,0 +1,27 @@
+{
+  "pages": [
+    "clearCache",
+    "compileAOT",
+    "compileJIT",
+    "cppTemplate",
+    "cTemplate",
+    "defineConfig",
+    "defineModule",
+    "generateTypeDeclarations",
+    "getCacheSize",
+    "inlineC",
+    "inlineCpp",
+    "inlineRust",
+    "inlineZig",
+    "loadModule",
+    "parseSymbols",
+    "rustTemplate",
+    "safeC",
+    "safeCpp",
+    "safeRust",
+    "safeUse",
+    "safeZig",
+    "zigTemplate"
+  ],
+  "title": "Functions"
+}

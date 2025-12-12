@@ -2,7 +2,7 @@
   "title": "@bunnativekit/platform",
   "pages": [
     "index",
-    "functions",
-    "interfaces"
+    "interfaces",
+    "functions"
   ]
 }

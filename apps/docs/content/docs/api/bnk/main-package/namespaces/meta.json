@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "cache",
+    "compiler",
+    "debug",
+    "isolation",
+    "loader",
+    "platform",
+    "schema",
+    "toolchain"
+  ]
+}

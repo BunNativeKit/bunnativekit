@@ -1,0 +1,9 @@
+{
+  "pages": [
+    "loadCC",
+    "loadFFI",
+    "loadModule",
+    "loadNAPI"
+  ],
+  "title": "Functions"
+}

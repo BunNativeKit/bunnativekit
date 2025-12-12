@@ -4,7 +4,7 @@ title: BindingConfig
 
 # Interface: BindingConfig
 
-Defined in: index.ts:68
+Defined in: [index.ts:68](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L68)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.ts:68
 optional fallback: BindingMethod;
 ```
 
-Defined in: index.ts:70
+Defined in: [index.ts:70](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L70)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: index.ts:70
 prefer: BindingMethod;
 ```
 
-Defined in: index.ts:69
+Defined in: [index.ts:69](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L69)

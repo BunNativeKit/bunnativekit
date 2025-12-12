@@ -11,20 +11,20 @@ Provides unified interface for all binding methods.
 
 | Interface | Description |
 | ------ | ------ |
-| [CCLoadOptions](interfaces/CCLoadOptions) | - |
-| [CCModule](interfaces/CCModule) | - |
-| [FFILibrary](interfaces/FFILibrary) | - |
-| [FFILoadOptions](interfaces/FFILoadOptions) | - |
-| [NAPILoadOptions](interfaces/NAPILoadOptions) | - |
-| [NAPIModule](interfaces/NAPIModule) | - |
-| [UnifiedLoadOptions](interfaces/UnifiedLoadOptions) | - |
-| [UnifiedModule](interfaces/UnifiedModule) | - |
+| [CCLoadOptions](./interfaces/CCLoadOptions.md) | - |
+| [CCModule](./interfaces/CCModule.md) | - |
+| [FFILibrary](./interfaces/FFILibrary.md) | - |
+| [FFILoadOptions](./interfaces/FFILoadOptions.md) | - |
+| [NAPILoadOptions](./interfaces/NAPILoadOptions.md) | - |
+| [NAPIModule](./interfaces/NAPIModule.md) | - |
+| [UnifiedLoadOptions](./interfaces/UnifiedLoadOptions.md) | - |
+| [UnifiedModule](./interfaces/UnifiedModule.md) | - |
 
 ## Functions
 
 | Function | Description |
 | ------ | ------ |
-| [loadCC](functions/loadCC) | Compile and load C code at runtime via Bun's cc |
-| [loadFFI](functions/loadFFI) | Load a shared library via Bun's FFI |
-| [loadModule](functions/loadModule) | Load a native module - auto-selects FFI, NAPI, or cc based on binding type |
-| [loadNAPI](functions/loadNAPI) | Load a native addon (.node file) via NAPI |
+| [loadCC](./functions/loadCC.md) | Compile and load C code at runtime via Bun's cc |
+| [loadFFI](./functions/loadFFI.md) | Load a shared library via Bun's FFI |
+| [loadModule](./functions/loadModule.md) | Load a native module - auto-selects FFI, NAPI, or cc based on binding type |
+| [loadNAPI](./functions/loadNAPI.md) | Load a native addon (.node file) via NAPI |

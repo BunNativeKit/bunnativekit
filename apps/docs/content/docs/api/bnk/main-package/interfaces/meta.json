@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "AOTCompileOptions",
+    "AOTOptions",
+    "AOTResult",
+    "BindingConfig",
+    "BuildConfig",
+    "BuildResult",
+    "CacheConfig",
+    "CompileOptions",
+    "DebugConfig",
+    "ErrorConfig",
+    "FFISymbolDef",
+    "InlineOptions",
+    "IsolationConfig",
+    "JITModule",
+    "JITOptions",
+    "LoadedModule",
+    "LoadOptions",
+    "ModuleManifest",
+    "NAPISymbolDef",
+    "PlatformInfo",
+    "ProjectConfig",
+    "RuntimeLoadOptions",
+    "RuntimeModule"
+  ],
+  "title": "Interfaces"
+}

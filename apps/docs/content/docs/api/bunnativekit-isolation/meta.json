@@ -2,9 +2,9 @@
   "title": "@bunnativekit/isolation",
   "pages": [
     "index",
-    "classes",
-    "functions",
     "interfaces",
+    "functions",
+    "classes",
     "type-aliases"
   ]
 }

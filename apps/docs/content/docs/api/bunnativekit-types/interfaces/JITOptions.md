@@ -4,7 +4,7 @@ title: JITOptions
 
 # Interface: JITOptions
 
-Defined in: index.ts:235
+Defined in: [index.ts:235](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L235)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.ts:235
 optional cache: boolean;
 ```
 
-Defined in: index.ts:241
+Defined in: [index.ts:241](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L241)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: index.ts:241
 optional isolation: IsolationMode;
 ```
 
-Defined in: index.ts:240
+Defined in: [index.ts:240](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L240)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: index.ts:240
 lang: SourceLanguage;
 ```
 
-Defined in: index.ts:236
+Defined in: [index.ts:236](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L236)
 
 ***
 
@@ -44,7 +44,7 @@ Defined in: index.ts:236
 source: string;
 ```
 
-Defined in: index.ts:237
+Defined in: [index.ts:237](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L237)
 
 ***
 
@@ -54,6 +54,6 @@ Defined in: index.ts:237
 optional symbols: Record<string, FFISymbolDef>;
 ```
 
-Defined in: index.ts:239
+Defined in: [index.ts:239](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L239)
 
 For type-safe calls

@@ -4,7 +4,7 @@ title: JITModule
 
 # Interface: JITModule
 
-Defined in: index.ts:244
+Defined in: [index.ts:244](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L244)
 
 ## Methods
 
@@ -14,7 +14,7 @@ Defined in: index.ts:244
 call<T>(fn, ...args): T;
 ```
 
-Defined in: index.ts:245
+Defined in: [index.ts:245](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L245)
 
 #### Type Parameters
 
@@ -41,7 +41,7 @@ Defined in: index.ts:245
 close(): void;
 ```
 
-Defined in: index.ts:246
+Defined in: [index.ts:246](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L246)
 
 #### Returns
 

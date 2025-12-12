@@ -4,7 +4,7 @@ title: NAPIModule
 
 # Interface: NAPIModule\<T\>
 
-Defined in: index.ts:145
+Defined in: [index.ts:145](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/loader/src/index.ts#L145)
 
 ## Type Parameters
 
@@ -20,7 +20,7 @@ Defined in: index.ts:145
 exports: T;
 ```
 
-Defined in: index.ts:146
+Defined in: [index.ts:146](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/loader/src/index.ts#L146)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: index.ts:146
 readonly path: string;
 ```
 
-Defined in: index.ts:150
+Defined in: [index.ts:150](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/loader/src/index.ts#L150)
 
 ## Methods
 
@@ -40,7 +40,7 @@ Defined in: index.ts:150
 close(): void;
 ```
 
-Defined in: index.ts:149
+Defined in: [index.ts:149](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/loader/src/index.ts#L149)
 
 No-op - NAPI modules can't be unloaded
 
@@ -56,7 +56,7 @@ No-op - NAPI modules can't be unloaded
 getExportNames(): string[];
 ```
 
-Defined in: index.ts:147
+Defined in: [index.ts:147](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/loader/src/index.ts#L147)
 
 #### Returns
 

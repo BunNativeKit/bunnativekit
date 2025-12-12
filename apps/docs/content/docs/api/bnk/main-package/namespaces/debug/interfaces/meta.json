@@ -1,0 +1,10 @@
+{
+  "pages": [
+    "LoggerConfig",
+    "ProcessState",
+    "ThreadInfo",
+    "TraceEvent",
+    "TracerConfig"
+  ],
+  "title": "Interfaces"
+}

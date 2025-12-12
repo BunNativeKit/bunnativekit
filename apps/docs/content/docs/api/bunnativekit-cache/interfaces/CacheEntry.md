@@ -4,7 +4,7 @@ title: CacheEntry
 
 # Interface: CacheEntry
 
-Defined in: cache/src/index.ts:36
+Defined in: [cache/src/index.ts:36](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/cache/src/index.ts#L36)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: cache/src/index.ts:36
 accessedAt: number;
 ```
 
-Defined in: cache/src/index.ts:43
+Defined in: [cache/src/index.ts:43](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/cache/src/index.ts#L43)
 
 Updated on read - used for LRU eviction
 
@@ -26,7 +26,7 @@ Updated on read - used for LRU eviction
 createdAt: number;
 ```
 
-Defined in: cache/src/index.ts:41
+Defined in: [cache/src/index.ts:41](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/cache/src/index.ts#L41)
 
 ***
 
@@ -36,7 +36,7 @@ Defined in: cache/src/index.ts:41
 hash: string;
 ```
 
-Defined in: cache/src/index.ts:39
+Defined in: [cache/src/index.ts:39](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/cache/src/index.ts#L39)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: cache/src/index.ts:39
 key: string;
 ```
 
-Defined in: cache/src/index.ts:37
+Defined in: [cache/src/index.ts:37](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/cache/src/index.ts#L37)
 
 ***
 
@@ -56,7 +56,7 @@ Defined in: cache/src/index.ts:37
 optional meta: Record<string, unknown>;
 ```
 
-Defined in: cache/src/index.ts:44
+Defined in: [cache/src/index.ts:44](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/cache/src/index.ts#L44)
 
 ***
 
@@ -66,7 +66,7 @@ Defined in: cache/src/index.ts:44
 path: string;
 ```
 
-Defined in: cache/src/index.ts:40
+Defined in: [cache/src/index.ts:40](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/cache/src/index.ts#L40)
 
 ***
 
@@ -76,4 +76,4 @@ Defined in: cache/src/index.ts:40
 source: string;
 ```
 
-Defined in: cache/src/index.ts:38
+Defined in: [cache/src/index.ts:38](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/cache/src/index.ts#L38)

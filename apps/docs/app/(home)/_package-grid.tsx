@@ -32,9 +32,9 @@ const packages: Package[] = [
 
 export function PackageGrid() {
   return (
-    <div className="grid md:grid-cols-3 gap-6 text-base">
+    <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 text-base">
       {packages.map((pkg) => (
-        <div key={pkg.name} className="space-y-2">
+        <div key={pkg.name} className="space-y-1 sm:space-y-2">
           <code className="text-sm font-semibold">{pkg.name}</code>
           <p className="text-neutral-600">{pkg.description}</p>
         </div>

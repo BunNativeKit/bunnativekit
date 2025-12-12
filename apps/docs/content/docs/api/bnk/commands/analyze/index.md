@@ -10,4 +10,4 @@ Analyze logs, traces, crash dumps, and memory usage.
 
 | Function | Description |
 | ------ | ------ |
-| [createAnalyzeCommand](functions/createAnalyzeCommand) | - |
+| [createAnalyzeCommand](./functions/createAnalyzeCommand.md) | - |

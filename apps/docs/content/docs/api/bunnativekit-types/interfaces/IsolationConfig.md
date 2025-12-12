@@ -4,7 +4,7 @@ title: IsolationConfig
 
 # Interface: IsolationConfig
 
-Defined in: index.ts:77
+Defined in: [index.ts:77](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L77)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.ts:77
 optional autoRestart: boolean;
 ```
 
-Defined in: index.ts:81
+Defined in: [index.ts:81](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L81)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: index.ts:81
 optional maxRestarts: number;
 ```
 
-Defined in: index.ts:82
+Defined in: [index.ts:82](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L82)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: index.ts:82
 mode: IsolationMode;
 ```
 
-Defined in: index.ts:78
+Defined in: [index.ts:78](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L78)
 
 ***
 
@@ -44,6 +44,6 @@ Defined in: index.ts:78
 optional timeout: number;
 ```
 
-Defined in: index.ts:80
+Defined in: [index.ts:80](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/types/src/index.ts#L80)
 
 Timeout in ms

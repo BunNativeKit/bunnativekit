@@ -33,7 +33,7 @@ const colors: {
 };
 ```
 
-Defined in: apps/bnk/src/utils/colors.ts:16
+Defined in: [apps/bnk/src/utils/colors.ts:16](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/apps/bnk/src/utils/colors.ts#L16)
 
 Color functions for terminal output
 
@@ -331,11 +331,11 @@ yellow: (text) => string;
 
 | Function | Description |
 | ------ | ------ |
-| [error](functions/error) | Print an error message |
-| [header](functions/header) | Print a formatted header |
-| [info](functions/info) | Print an info message |
-| [keyValue](functions/keyValue) | Print a key-value pair |
-| [listItem](functions/listItem) | Print a list item |
-| [status](functions/status) | Print a status line with check/cross indicator |
-| [success](functions/success) | Print a success message |
-| [warn](functions/warn) | Print a warning message |
+| [error](./functions/error.md) | Print an error message |
+| [header](./functions/header.md) | Print a formatted header |
+| [info](./functions/info.md) | Print an info message |
+| [keyValue](./functions/keyValue.md) | Print a key-value pair |
+| [listItem](./functions/listItem.md) | Print a list item |
+| [status](./functions/status.md) | Print a status line with check/cross indicator |
+| [success](./functions/success.md) | Print a success message |
+| [warn](./functions/warn.md) | Print a warning message |

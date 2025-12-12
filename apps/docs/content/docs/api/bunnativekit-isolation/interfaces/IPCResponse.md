@@ -4,7 +4,7 @@ title: IPCResponse
 
 # Interface: IPCResponse
 
-Defined in: index.ts:20
+Defined in: [index.ts:20](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/isolation/src/index.ts#L20)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.ts:20
 optional error: string;
 ```
 
-Defined in: index.ts:24
+Defined in: [index.ts:24](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/isolation/src/index.ts#L24)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: index.ts:24
 id: number;
 ```
 
-Defined in: index.ts:21
+Defined in: [index.ts:21](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/isolation/src/index.ts#L21)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: index.ts:21
 type: "result" | "error";
 ```
 
-Defined in: index.ts:22
+Defined in: [index.ts:22](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/isolation/src/index.ts#L22)
 
 ***
 
@@ -44,4 +44,4 @@ Defined in: index.ts:22
 optional value: unknown;
 ```
 
-Defined in: index.ts:23
+Defined in: [index.ts:23](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/isolation/src/index.ts#L23)

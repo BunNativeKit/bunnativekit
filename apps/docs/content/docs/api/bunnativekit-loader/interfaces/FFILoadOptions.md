@@ -4,7 +4,7 @@ title: FFILoadOptions
 
 # Interface: FFILoadOptions
 
-Defined in: index.ts:59
+Defined in: [index.ts:59](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/loader/src/index.ts#L59)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.ts:59
 optional debug: boolean;
 ```
 
-Defined in: index.ts:62
+Defined in: [index.ts:62](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/loader/src/index.ts#L62)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: index.ts:62
 path: string;
 ```
 
-Defined in: index.ts:60
+Defined in: [index.ts:60](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/loader/src/index.ts#L60)
 
 ***
 
@@ -34,4 +34,4 @@ Defined in: index.ts:60
 symbols: Record<string, FFISymbolDef>;
 ```
 
-Defined in: index.ts:61
+Defined in: [index.ts:61](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/loader/src/index.ts#L61)

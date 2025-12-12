@@ -11,21 +11,21 @@ Uses Zig as the primary toolchain with cross-compilation support.
 
 | Class | Description |
 | ------ | ------ |
-| [RustCompiler](classes/RustCompiler) | - |
-| [ZigCC](classes/ZigCC) | Uses Zig's bundled clang for C/C++ compilation |
-| [ZigCompiler](classes/ZigCompiler) | - |
+| [RustCompiler](./classes/RustCompiler.md) | - |
+| [ZigCC](./classes/ZigCC.md) | Uses Zig's bundled clang for C/C++ compilation |
+| [ZigCompiler](./classes/ZigCompiler.md) | - |
 
 ## Interfaces
 
 | Interface | Description |
 | ------ | ------ |
-| [CompileOptions](interfaces/CompileOptions) | - |
+| [CompileOptions](./interfaces/CompileOptions.md) | - |
 
 ## Type Aliases
 
 | Type Alias | Description |
 | ------ | ------ |
-| [Compiler](type-aliases/Compiler) | - |
+| [Compiler](./type-aliases/Compiler.md) | - |
 
 ## Variables
 
@@ -35,7 +35,7 @@ Uses Zig as the primary toolchain with cross-compilation support.
 const rustCompiler: RustCompiler;
 ```
 
-Defined in: index.ts:544
+Defined in: [index.ts:544](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/compiler/src/index.ts#L544)
 
 ***
 
@@ -45,7 +45,7 @@ Defined in: index.ts:544
 const zigCC: ZigCC;
 ```
 
-Defined in: index.ts:542
+Defined in: [index.ts:542](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/compiler/src/index.ts#L542)
 
 ***
 
@@ -55,7 +55,7 @@ Defined in: index.ts:542
 const zigCompiler: ZigCompiler;
 ```
 
-Defined in: index.ts:541
+Defined in: [index.ts:541](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/compiler/src/index.ts#L541)
 
 ***
 
@@ -65,11 +65,11 @@ Defined in: index.ts:541
 const zigCXX: ZigCC;
 ```
 
-Defined in: index.ts:543
+Defined in: [index.ts:543](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/internal/compiler/src/index.ts#L543)
 
 ## Functions
 
 | Function | Description |
 | ------ | ------ |
-| [compile](functions/compile) | - |
-| [getCompiler](functions/getCompiler) | - |
+| [compile](./functions/compile.md) | - |
+| [getCompiler](./functions/getCompiler.md) | - |

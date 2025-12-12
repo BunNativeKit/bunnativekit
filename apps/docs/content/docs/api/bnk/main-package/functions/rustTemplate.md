@@ -1,0 +1,24 @@
+---
+title: RustTemplate
+---
+
+# Function: rustTemplate()
+
+```ts
+function rustTemplate(strings, ...values): Promise<JITModule>;
+```
+
+Defined in: [packages/jit/src/index.ts:628](https://github.com/BunNativeKit/bunnativekit/blob/52f64e2494d2c1ae85c3ecd54a344650c047937e/packages/jit/src/index.ts#L628)
+
+Tagged template for Rust - parses symbols automatically
+
+## Parameters
+
+| Parameter | Type |
+| ------ | ------ |
+| `strings` | `TemplateStringsArray` |
+| ...`values` | `unknown`[] |
+
+## Returns
+
+`Promise`\<[`JITModule`](../interfaces/JITModule.md)\>
