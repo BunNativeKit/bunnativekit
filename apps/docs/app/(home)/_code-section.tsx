@@ -8,10 +8,13 @@ interface CodeSectionProps {
 
 export function CodeSection({ code, lang, description }: CodeSectionProps) {
   return (
-    <div>
-      <DynamicCodeBlock lang={lang} code={code} />
+    <div className="min-w-0">
+      <div className="overflow-x-auto">
+        <DynamicCodeBlock lang={lang} code={code} />
+      </div>
       {description && (
-        <p className="mt-3 text-sm text-neutral-500" dangerouslySetInnerHTML={{ __html: description }} />
+        // biome-ignore lint/security/noDangerouslySetInnerHtml: shh
+        <p className="mt-2 sm:mt-3 text-xs sm:text-sm text-neutral-500" dangerouslySetInnerHTML={{ __html: description }} />
       )}
     </div>
   );

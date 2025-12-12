@@ -30,13 +30,13 @@ const featureLists: FeatureList[] = [
 
 export function DeveloperExperienceSection() {
   return (
-    <section className="space-y-8">
+    <section className="space-y-6 sm:space-y-8">
       <Kicker>Developer experience</Kicker>
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
         {featureLists.map((list) => (
-          <div key={list.title} className="space-y-3">
-            <h3 className="text-2xl font-semibold">{list.title}</h3>
-            <ul className="space-y-2 text-lg text-neutral-600">
+          <div key={list.title} className="space-y-2 sm:space-y-3">
+            <h3 className="text-xl sm:text-2xl font-semibold">{list.title}</h3>
+            <ul className="space-y-1.5 sm:space-y-2 text-base sm:text-lg text-neutral-600">
               {list.features.map((feature) => (
                 <li key={feature}>• {feature}</li>
               ))}

@@ -197,36 +197,42 @@ JIT is 3.38x faster than native Bun`;
 export function BenchmarkSection() {
   return (
     <StackSection>
-      <h2 className="text-3xl font-bold">Ok but, does it even work?</h2>
-      <p className="text-xl text-neutral-600">Matrix multiplication benchmark: JIT-compiled Zig vs native Bun</p>
+      <h2 className="text-2xl sm:text-3xl font-bold">Ok but, does it even work?</h2>
+      <p className="text-base sm:text-lg md:text-xl text-neutral-600">Matrix multiplication benchmark: JIT-compiled Zig vs native Bun</p>
 
       <Tabs items={['Implementations', 'Full Benchmark']} defaultIndex={0}>
         <Tab value="Implementations">
-          <div className="grid md:grid-cols-2 gap-6 mt-6">
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Zig implementation</h3>
-              <DynamicCodeBlock lang="zig" code={zigImplementation} />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 mt-4 sm:mt-6">
+            <div className="min-w-0">
+              <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Zig implementation</h3>
+              <div className="overflow-x-auto">
+                <DynamicCodeBlock lang="zig" code={zigImplementation} />
+              </div>
             </div>
 
-            <div>
-              <h3 className="text-lg font-semibold mb-4">TypeScript implementation</h3>
-              <DynamicCodeBlock lang="ts" code={tsImplementation} />
+            <div className="min-w-0">
+              <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">TypeScript implementation</h3>
+              <div className="overflow-x-auto">
+                <DynamicCodeBlock lang="ts" code={tsImplementation} />
+              </div>
             </div>
           </div>
         </Tab>
 
         <Tab value="Full Benchmark">
-          <div className="mt-6">
+          <div className="mt-4 sm:mt-6 overflow-x-auto">
             <DynamicCodeBlock lang="ts" code={fullBenchmark} />
           </div>
         </Tab>
       </Tabs>
 
-      <div className="mt-8">
-        <h3 className="text-lg font-semibold mb-4">Results</h3>
-        <DynamicCodeBlock lang="text" code={benchmarkResults} />
+      <div className="mt-6 sm:mt-8">
+        <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Results</h3>
+        <div className="overflow-x-auto">
+          <DynamicCodeBlock lang="text" code={benchmarkResults} />
+        </div>
 
-        <p className="mt-4 text-base text-neutral-600">
+        <p className="mt-3 sm:mt-4 text-sm sm:text-base text-neutral-600">
           In this test, the JIT-compiled Zig code runs <strong>~3.38× faster</strong> than equivalent TypeScript
           with typed arrays.
         </p>

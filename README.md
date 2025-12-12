@@ -6,7 +6,19 @@ BunNativeKit (bnk) is a little research project i started to do a bunch of funny
 
 ### Essentially a TLDR of BNK would be my funny attempt at working with native code in Bun, but wrapping it up in a nice DX box :D
 
-Give https://bunnativekit.xwx.gg a look for more nonsense (bnk.xwx.gg also works dw <3)
+Write inline Zig, C, C++, or Rust right in your TypeScript and have it Just Work™. The JIT compiler handles all the compilation, caching (both memory and disk!), and FFI symbol parsing automagically. Need production builds? AOT mode has you covered with cross-platform compilation and TypeScript declaration generation. Oh and it'll even install Zig for you if you don't have it <3
+
+```ts
+import { jit } from "@bunnativekit/jit";
+
+const result = await jit.zig(`
+  export fn add(a: i32, b: i32) i32 {
+    return a + b;
+  }
+`, 6, 7); // => 13
+```
+
+Give [bunnativekit.xwx.gg](https://bunnativekit.xwx.gg) a look for more nonsense + deeper dive into what bnk is, why/what/huh???- and a api ref ([bnk.xwx.gg](https://bnk.xwx.gg) also works dw <3)
 
 
 MIT License <3
