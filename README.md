@@ -5,6 +5,7 @@
 BunNativeKit (bnk) is a little research project i started to do a bunch of funny "nonsense" and "neat" things to- uh i mean WITH* bun :D
 
 ### Essentially a TLDR of BNK would be my funny attempt at working with native code in Bun, but wrapping it up in a nice DX box :D
+> it is not currently classifiable as JIT - but, im working on things under the hood to get closer to that goal. But the API signature will stay roughly the same.
 
 Write inline Zig, C, C++, or Rust right in your TypeScript and have it Just Work™. The JIT compiler handles all the compilation, caching (both memory and disk!), and FFI symbol parsing automagically. Need production builds? AOT mode has you covered with cross-platform compilation and TypeScript declaration generation. Oh and it'll even install Zig for you if you don't have it <3
 
