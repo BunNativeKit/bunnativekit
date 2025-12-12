@@ -1,6 +1,0 @@
-{
-  "name": "@internal/isolation",
-  "entryPoints": ["./src/index.ts"],
-  "tsconfig": "./tsconfig.json",
-  "readme": "none"
-}

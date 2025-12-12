@@ -5,7 +5,7 @@
  */
 
 import { existsSync, mkdirSync } from "fs";
-import { join, dirname, basename, isAbsolute } from "path";
+import { join, basename, isAbsolute } from "path";
 import type {
     SourceLanguage,
     OptimizationLevel,
@@ -22,6 +22,11 @@ import {
     isZigInstalled,
     isCrossCompile,
 } from "@bunnativekit/platform";
+
+import {
+    type ZigBinary,
+    ZigToolchainManager
+} from "@bunnativekit/toolchain";
 
 // optimization flags
 
@@ -55,13 +60,30 @@ export interface CompileOptions {
 // zig compiler
 
 export class ZigCompiler {
+    private ZTM:ZigToolchainManager = new ZigToolchainManager();
+    private zigBin: string | null = null;
+    private ZTMZig: ZigBinary | null = null;
+
     async isAvailable(): Promise<boolean> {
         return isZigInstalled();
     }
 
+    async getZigBin():Promise<string> {
+        if (this.zigBin) {
+            return this.zigBin;
+        }
+        if (this.ZTMZig) {
+            return this.ZTMZig.binPath;
+        }
+        const zig = await this.ZTM.ensureBinary();
+        this.ZTMZig = zig;
+        this.zigBin = zig.binPath;
+        return zig.binPath
+    }
+
     async getVersion(): Promise<string | null> {
         try {
-            const proc = Bun.spawn(["zig", "version"], {
+            const proc = Bun.spawn([await this.getZigBin(), "version"], {
                 stdout: "pipe",
                 stderr: "pipe",
             });
@@ -73,7 +95,7 @@ export class ZigCompiler {
         }
     }
 
-    buildCommand(config: BuildConfig, options: CompileOptions): string[] {
+    async buildCommand(config: BuildConfig, options: CompileOptions): Promise<string[]> {
         const platform = options.platform ?? getCurrentPlatform();
         const arch = options.arch ?? getCurrentArch();
         const platformInfo = getPlatformInfo(platform);
@@ -86,7 +108,7 @@ export class ZigCompiler {
             `${platformInfo.libPrefix}${outName}${ext}`
         );
 
-        const cmd: string[] = ["zig", "build-lib"];
+        const cmd: string[] = [await this.getZigBin(), "build-lib"];
 
         const sourcePath = isAbsolute(config.source)
             ? config.source
@@ -129,7 +151,7 @@ export class ZigCompiler {
             mkdirSync(options.outputDir, { recursive: true });
         }
 
-        const cmd = this.buildCommand(config, options);
+        const cmd = await this.buildCommand(config, options);
 
         if (options.verbose) {
             console.log(`[zig] $ ${cmd.join(" ")}`);
@@ -189,16 +211,46 @@ export class ZigCompiler {
 /** Uses Zig's bundled clang for C/C++ compilation */
 export class ZigCC {
     private mode: "c" | "cpp";
-
-    constructor(mode: "c" | "cpp" = "c") {
-        this.mode = mode;
-    }
+    private ZTM:ZigToolchainManager = new ZigToolchainManager();
+    private zigBin: string | null = null;
+    private ZTMZig: ZigBinary | null = null;
 
     async isAvailable(): Promise<boolean> {
         return isZigInstalled();
     }
 
-    buildCommand(config: BuildConfig, options: CompileOptions): string[] {
+    async getZigBin():Promise<string> {
+        if (this.zigBin) {
+            return this.zigBin;
+        }
+        if (this.ZTMZig) {
+            return this.ZTMZig.binPath;
+        }
+        const zig = await this.ZTM.ensureBinary();
+        this.ZTMZig = zig;
+        this.zigBin = zig.binPath;
+        return zig.binPath
+    }
+
+    async getVersion(): Promise<string | null> {
+        try {
+            const proc = Bun.spawn([await this.getZigBin(), "version"], {
+                stdout: "pipe",
+                stderr: "pipe",
+            });
+            const stdout = await new Response(proc.stdout).text();
+            const exitCode = await proc.exited;
+            return exitCode === 0 ? stdout.trim() : null;
+        } catch {
+            return null;
+        }
+    }
+
+    constructor(mode: "c" | "cpp" = "c") {
+        this.mode = mode;
+    }
+
+    async buildCommand(config: BuildConfig, options: CompileOptions): Promise<string[]> {
         const platform = options.platform ?? getCurrentPlatform();
         const arch = options.arch ?? getCurrentArch();
         const platformInfo = getPlatformInfo(platform);
@@ -212,7 +264,7 @@ export class ZigCC {
             `${platformInfo.libPrefix}${outName}${ext}`
         );
 
-        const cmd: string[] = ["zig", this.mode === "cpp" ? "c++" : "cc"];
+        const cmd: string[] = [await this.getZigBin(), this.mode === "cpp" ? "c++" : "cc"];
 
         cmd.push("-shared", "-fPIC");
         cmd.push(...CC_OPTIMIZATION[optimization]);
@@ -262,7 +314,7 @@ export class ZigCC {
             mkdirSync(options.outputDir, { recursive: true });
         }
 
-        const cmd = this.buildCommand(config, options);
+        const cmd = await this.buildCommand(config, options);
 
         if (options.verbose) {
             console.log(`[zig ${this.mode}] $ ${cmd.join(" ")}`);

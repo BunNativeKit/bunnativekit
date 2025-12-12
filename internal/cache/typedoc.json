@@ -1,6 +1,0 @@
-{
-  "name": "@internal/cache",
-  "entryPoints": ["./src/index.ts"],
-  "tsconfig": "./tsconfig.json",
-  "readme": "none"
-}

@@ -14,8 +14,7 @@
 		"declarationMap": true,
 		"sourceMap": true,
 		"noEmit": true,
-		"lib": ["ESNext"],
-		"types": ["bun-types"]
+		"lib": ["ESNext"]
 	},
 	"exclude": ["node_modules", "dist"]
 }

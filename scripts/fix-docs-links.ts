@@ -128,10 +128,10 @@ async function fixFileLinks(filePath: string): Promise<FixResult | null> {
 }
 
 async function main() {
-  console.log("🔍 Scanning API docs for broken links...\n");
+  console.log("Scanning API docs for broken links...");
   
   const files = await getAllMdFiles(API_DOCS_DIR);
-  console.log(`Found ${files.length} markdown files\n`);
+  console.log(`Found ${files.length} markdown files`);
   
   let totalFixes = 0;
   const results: FixResult[] = [];
@@ -145,21 +145,21 @@ async function main() {
   }
   
   if (results.length === 0) {
-    console.log("✅ No broken links found!");
+    console.log("No broken links found!");
     return;
   }
   
-  console.log(`📝 Fixed ${totalFixes} links in ${results.length} files:\n`);
+  console.log(`Fixed ${totalFixes} links in ${results.length} files:`);
   
   for (const result of results) {
-    console.log(`  ${result.file}:`);
+    console.log(`-${result.file}:`);
     for (const fix of result.fixes) {
-      console.log(`    - ${fix.original} → ${fix.fixed}`);
+      console.log(`|~${fix.original} → ${fix.fixed}`);
     }
     console.log();
   }
   
-  console.log("✅ Done!");
+  console.log("Done!");
 }
 
 main().catch(console.error);

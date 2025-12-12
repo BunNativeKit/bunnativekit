@@ -11,6 +11,9 @@ interface PackageJson {
     name: string;
     version: string;
     private?: boolean;
+    dependencies?: Record<string, string>;
+    devDependencies?: Record<string, string>;
+    peerDependencies?: Record<string, string>;
     publishConfig?: {
         access?: string;
     };
@@ -19,28 +22,31 @@ interface PackageJson {
 
 interface PackageInfo {
     path: string;
+    dir: string;
     pkgJson: PackageJson;
     hasChanges: boolean;
-    newVersion?: string;
 }
 
 function readJson(path: string): PackageJson {
     return JSON.parse(readFileSync(path, "utf-8"));
 }
 
-function writeJson(path: string, data: PackageJson): void {
-    writeFileSync(path, JSON.stringify(data, null, 2) + "\n");
-}
-
-function bumpPatchVersion(version: string): string {
-    const [major, minor, patch] = version.split(".").map(Number);
-    return `${major}.${minor}.${patch + 1}`;
-}
+/**
+ * Priority order for package categories.
+ * Lower number = published first.
+ * internal packages should be published before packages, which should be published before apps.
+ */
+const CATEGORY_PRIORITY: Record<string, number> = {
+    internal: 0,
+    packages: 1,
+    apps: 2,
+};
 
 function findAllPackages(): string[] {
     const dirs: string[] = [];
 
-    for (const category of ["packages", "apps", "internal"]) {
+    // Collect packages in priority order: internal -> packages -> apps
+    for (const category of ["internal", "packages", "apps"]) {
         const categoryPath = join(WORKSPACE_ROOT, category);
         if (!existsSync(categoryPath)) continue;
 
@@ -55,6 +61,125 @@ function findAllPackages(): string[] {
     }
 
     return dirs;
+}
+
+/**
+ * Get all workspace dependencies from a package.json (dependencies that use "workspace:*")
+ */
+function getWorkspaceDeps(pkgJson: PackageJson): string[] {
+    const deps: string[] = [];
+    const allDeps = {
+        ...pkgJson.dependencies,
+        ...pkgJson.peerDependencies,
+    };
+
+    for (const [name, version] of Object.entries(allDeps)) {
+        if (version.startsWith("workspace:")) {
+            deps.push(name);
+        }
+    }
+
+    return deps;
+}
+
+/**
+ * Topologically sort packages so dependencies are published before dependents.
+ * Uses Kahn's algorithm for topological sorting.
+ */
+function topologicalSort(packages: PackageInfo[]): PackageInfo[] {
+    // Create a map of package name to package info
+    const packageMap = new Map<string, PackageInfo>();
+    for (const pkg of packages) {
+        packageMap.set(pkg.pkgJson.name, pkg);
+    }
+
+    // Build adjacency list and in-degree count
+    // Edge from A -> B means A depends on B (B must be published first)
+    const inDegree = new Map<string, number>();
+    const dependents = new Map<string, string[]>(); // package -> packages that depend on it
+
+    for (const pkg of packages) {
+        const name = pkg.pkgJson.name;
+        if (!inDegree.has(name)) {
+            inDegree.set(name, 0);
+        }
+        if (!dependents.has(name)) {
+            dependents.set(name, []);
+        }
+    }
+
+    // Calculate in-degrees based on workspace dependencies
+    for (const pkg of packages) {
+        const name = pkg.pkgJson.name;
+        const deps = getWorkspaceDeps(pkg.pkgJson);
+
+        for (const dep of deps) {
+            // Only count if the dependency is in our publishable set
+            if (packageMap.has(dep)) {
+                inDegree.set(name, (inDegree.get(name) || 0) + 1);
+                dependents.get(dep)!.push(name);
+            }
+        }
+    }
+
+    // Start with packages that have no dependencies (in-degree = 0)
+    // Sort by category priority first, then alphabetically for deterministic order
+    const queue: PackageInfo[] = packages
+        .filter(pkg => inDegree.get(pkg.pkgJson.name) === 0)
+        .sort((a, b) => {
+            const catA = a.dir.split("/")[0];
+            const catB = b.dir.split("/")[0];
+            const priorityDiff = (CATEGORY_PRIORITY[catA] ?? 99) - (CATEGORY_PRIORITY[catB] ?? 99);
+            if (priorityDiff !== 0) return priorityDiff;
+            return a.pkgJson.name.localeCompare(b.pkgJson.name);
+        });
+
+    const sorted: PackageInfo[] = [];
+
+    while (queue.length > 0) {
+        const pkg = queue.shift()!;
+        sorted.push(pkg);
+
+        // For each package that depends on this one, decrement its in-degree
+        const deps = dependents.get(pkg.pkgJson.name) || [];
+        const readyToAdd: PackageInfo[] = [];
+
+        for (const depName of deps) {
+            const newDegree = (inDegree.get(depName) || 0) - 1;
+            inDegree.set(depName, newDegree);
+
+            if (newDegree === 0) {
+                const depPkg = packageMap.get(depName);
+                if (depPkg) {
+                    readyToAdd.push(depPkg);
+                }
+            }
+        }
+
+        // Sort newly ready packages by category priority then name
+        readyToAdd.sort((a, b) => {
+            const catA = a.dir.split("/")[0];
+            const catB = b.dir.split("/")[0];
+            const priorityDiff = (CATEGORY_PRIORITY[catA] ?? 99) - (CATEGORY_PRIORITY[catB] ?? 99);
+            if (priorityDiff !== 0) return priorityDiff;
+            return a.pkgJson.name.localeCompare(b.pkgJson.name);
+        });
+
+        queue.push(...readyToAdd);
+    }
+
+    // Check for cycles
+    if (sorted.length !== packages.length) {
+        const remaining = packages.filter(p => !sorted.includes(p));
+        console.error("Circular dependency detected among packages:");
+        for (const pkg of remaining) {
+            const deps = getWorkspaceDeps(pkg.pkgJson).filter(d => packageMap.has(d));
+            console.error(`${pkg.pkgJson.name} -> [${deps.join(", ")}]`);
+        }
+        throw new Error("Cannot publish due to circular dependencies");
+    }
+
+    return sorted;
 }
 
 function getChangedFiles(): Set<string> {
@@ -111,9 +236,9 @@ function getPackageInfo(pkgDir: string, changedFiles: Set<string>): PackageInfo 
 
     return {
         path: pkgPath,
+        dir: pkgDir,
         pkgJson,
-        hasChanges,
-        newVersion: hasChanges ? bumpPatchVersion(pkgJson.version) : undefined,
+        hasChanges
     };
 }
 
@@ -141,9 +266,8 @@ async function main() {
 
     const packages = allPackages.map(dir => getPackageInfo(dir, changedFiles));
     const publishable = packages.filter(p => isPublishable(p.pkgJson));
-    const toBump = FORCE_PUBLISH ? publishable : publishable.filter(p => p.hasChanges);
 
-    if (toBump.length === 0) {
+    if (publishable.length === 0) {
         const message = FORCE_PUBLISH
             ? "No publishable packages found."
             : "No packages with changes detected. Nothing to publish.";
@@ -151,28 +275,12 @@ async function main() {
         return;
     }
 
-    if (FORCE_PUBLISH) {
-        console.log("Force publish mode - all publishable packages will be published:");
-        for (const pkg of toBump) {
-            console.log(`~ ${pkg.pkgJson.name}@${pkg.pkgJson.version}`);
-        }
-    } else {
-        console.log("Packages to bump:");
-        for (const pkg of toBump) {
-            console.log(`~ ${pkg.pkgJson.name}: ${pkg.pkgJson.version} -> ${pkg.newVersion}`);
-        }
-    }
-    console.log();
+    // Sort packages topologically so dependencies are published first
+    const sortedPackages = topologicalSort(publishable);
 
-    if (!FORCE_PUBLISH) {
-        console.log("Bumping versions...");
-        for (const pkg of toBump) {
-            const pkgJsonPath = join(pkg.path, "package.json");
-            pkg.pkgJson.version = pkg.newVersion!;
-            writeJson(pkgJsonPath, pkg.pkgJson);
-            console.log(`+ ${pkg.pkgJson.name}@${pkg.newVersion}`);
-        }
-        console.log();
+    console.log("Packages to publish:");
+    for (const pkg of sortedPackages) {
+        console.log(`  ${pkg.pkgJson.name}@${pkg.pkgJson.version}`);
     }
 
     console.log("Building packages...");
@@ -183,17 +291,8 @@ async function main() {
     });
 
     if (buildResult.exitCode !== 0) {
-        console.error("\n[error] Build failed!");
+        console.error("Build failed!");
         process.exit(1);
-    }
-    console.log();
-
-    console.log("Will publish:");
-    for (const pkg of toBump) {
-        const version = pkg.newVersion || pkg.pkgJson.version;
-        console.log(`bun publish --access public`);
-        console.log(`|${pkg.pkgJson.name}@${version}`);
-        console.log(`|cwd: ${pkg.path}\n`);
     }
 
     const confirmed = await promptConfirmation();
@@ -202,13 +301,10 @@ async function main() {
         process.exit(0);
     }
 
-    console.log("Publishing...");
     let published = 0;
     let failed = 0;
 
-    for (const pkg of toBump) {
-        console.log(`~Publishing ${pkg.pkgJson.name}...`);
-
+    for (const pkg of sortedPackages) {
         const result = Bun.spawnSync(["bun", "publish", "--access", "public"], {
             cwd: pkg.path,
             stdout: "pipe",
@@ -216,22 +312,16 @@ async function main() {
         });
 
         if (result.exitCode === 0) {
-            console.log(`+ ${pkg.pkgJson.name}@${pkg.pkgJson.version}`);
+            console.log(`Published ${pkg.pkgJson.name}@${pkg.pkgJson.version}`);
             published++;
         } else {
-            console.error(`! Failed: ${pkg.pkgJson.name}`);
-            console.error(result.stderr.toString());
+            console.error(`Failed ${pkg.pkgJson.name}: ${result.stderr.toString().trim()}`);
             failed++;
         }
-        console.log();
     }
 
-    // Summary
-    console.log(`Done publishing ${published} package(s)`);
-    if (failed > 0) {
-        console.error(`Warning: ${failed} package(s) failed`);
-        process.exit(1);
-    }
+    console.log(`Published ${published} packages${failed > 0 ? `, ${failed} failed` : ""}`);
+    if (failed > 0) process.exit(1);
 }
 
 main().catch((err) => {

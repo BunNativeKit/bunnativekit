@@ -1,6 +1,0 @@
-{
-  "name": "@internal/schema",
-  "entryPoints": ["./src/index.ts"],
-  "tsconfig": "./tsconfig.json",
-  "readme": "none"
-}

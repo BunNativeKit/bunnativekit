@@ -1,26 +1,26 @@
 {
-  "name": "@bunnativekit/isolation",
-  "version": "0.0.3",
-  "type": "module",
-  "publishConfig": {
-    "access": "public"
-  },
-  "exports": {
-    ".": {
-      "bun": "./src/index.ts"
-    }
-  },
-  "scripts": {
-    "test": "bun test",
-    "check-types": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@bunnativekit/types": "workspace:*",
-    "@bunnativekit/loader": "workspace:*",
-    "@bunnativekit/debug": "workspace:*"
-  },
-  "devDependencies": {
-    "@types/bun": "latest",
-    "typescript": "^5.7.2"
-  }
+	"name": "@bunnativekit/isolation",
+	"version": "0.0.6",
+	"type": "module",
+	"publishConfig": {
+		"access": "public"
+	},
+	"exports": {
+		".": {
+			"bun": "./src/index.ts"
+		}
+	},
+	"scripts": {
+		"test": "bun test",
+		"check-types": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@bunnativekit/types": "workspace:*",
+		"@bunnativekit/loader": "workspace:*",
+		"@bunnativekit/debug": "workspace:*"
+	},
+	"devDependencies": {
+		"@types/bun": "latest",
+		"typescript": "^5.7.2"
+	}
 }

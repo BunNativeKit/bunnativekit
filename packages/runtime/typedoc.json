@@ -1,6 +1,0 @@
-{
-  "name": "@bunnativekit/runtime - Module Loader",
-  "entryPoints": ["./src/index.ts"],
-  "tsconfig": "./tsconfig.json",
-  "readme": "none"
-}

@@ -30,7 +30,7 @@ import {
     getCacheDir,
     getCurrentPlatformArch,
     getZigVersion,
-} from "@internal/platform";
+} from "@bunnativekit/platform";
 
 // schemas
 

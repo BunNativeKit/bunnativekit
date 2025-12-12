@@ -12,7 +12,9 @@
 		"format": "prettier --write \"**/*.{ts,tsx,md}\"",
 		"docs": "bun --bun ./node_modules/.bin/typedoc --options typedoc.config.ts",
 		"docs:watch": "bun --bun ./node_modules/.bin/typedoc --options typedoc.config.ts --watch",
-		"pub": "bun run ./scripts/publish.ts"
+		"pub:publish": "bun run ./scripts/publish.ts",
+		"pub:version": "bun run ./scripts/version.ts",
+		"pub": "bun run pub:version && bun run pub:publish"
 	},
 	"devDependencies": {
 		"prettier": "^3.6.0",
@@ -27,5 +29,8 @@
 		"packages/*",
 		"internal/*",
 		"tools/*"
-	]
+	],
+	"dependencies": {
+		"@types/bun": "^1.3.4"
+	}
 }

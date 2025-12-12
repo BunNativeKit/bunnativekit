@@ -1,25 +1,26 @@
 {
-  "name": "@bunnativekit/toolchain",
-  "version": "0.0.3",
-  "type": "module",
-  "exports": {
-    ".": {
-      "bun": "./src/index.ts"
-    }
-  },
-  "scripts": {
-    "test": "bun test",
-    "check-types": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@bunnativekit/types": "workspace:*",
-    "zod": "^4.1.13"
-  },
-  "devDependencies": {
-    "@types/bun": "latest",
-    "typescript": "^5.7.2"
-  },
-  "publishConfig": {
-    "access": "public"
-  }
+	"name": "@bunnativekit/toolchain",
+	"version": "0.0.6",
+	"type": "module",
+	"exports": {
+		".": {
+			"bun": "./src/index.ts"
+		}
+	},
+	"scripts": {
+		"test": "bun test",
+		"check-types": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@bunnativekit/platform": "workspace:*",
+		"@bunnativekit/types": "workspace:*",
+		"zod": "^4.1.13"
+	},
+	"devDependencies": {
+		"@types/bun": "latest",
+		"typescript": "^5.7.2"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }
