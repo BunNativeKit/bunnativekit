@@ -258,6 +258,30 @@ async function promptConfirmation(): Promise<boolean> {
 }
 
 async function main() {
+    console.log("Running type-check...");
+    const typeCheckResult = Bun.spawnSync(["bun", "run", "check-types"], {
+        cwd: WORKSPACE_ROOT,
+        stdout: "inherit",
+        stderr: "inherit",
+    });
+
+    if (typeCheckResult.exitCode !== 0) {
+        console.error("type-check failed!");
+        process.exit(1);
+    }
+
+    console.log("Building packages...");
+    const buildResult = Bun.spawnSync(["bun", "run", "build"], {
+        cwd: WORKSPACE_ROOT,
+        stdout: "inherit",
+        stderr: "inherit",
+    });
+
+    if (buildResult.exitCode !== 0) {
+        console.error("Build failed!");
+        process.exit(1);
+    }
+
     const allPackages = findAllPackages();
     console.log(`Found ${allPackages.length} packages`);
 
@@ -280,18 +304,18 @@ async function main() {
 
     console.log("Packages to publish:");
     for (const pkg of sortedPackages) {
-        console.log(`  ${pkg.pkgJson.name}@${pkg.pkgJson.version}`);
+        console.log(`${pkg.pkgJson.name}@${pkg.pkgJson.version}`);
     }
 
-    console.log("Building packages...");
-    const buildResult = Bun.spawnSync(["bun", "run", "build"], {
+    console.log("Updating lockfile...");
+    const installResult = Bun.spawnSync(["bun", "install"], {
         cwd: WORKSPACE_ROOT,
         stdout: "inherit",
         stderr: "inherit",
     });
 
-    if (buildResult.exitCode !== 0) {
-        console.error("Build failed!");
+    if (installResult.exitCode !== 0) {
+        console.error("Failed to update lockfile!");
         process.exit(1);
     }
 

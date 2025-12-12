@@ -17,7 +17,7 @@
     },
     "apps/bnk": {
       "name": "bnk",
-      "version": "0.0.7",
+      "version": "0.0.9",
       "bin": {
         "bnk": "./src/cli.ts",
       },
@@ -102,7 +102,7 @@
     },
     "internal/cache": {
       "name": "@bunnativekit/cache",
-      "version": "0.0.5",
+      "version": "0.0.7",
       "dependencies": {
         "@bunnativekit/platform": "workspace:*",
         "@bunnativekit/types": "workspace:*",
@@ -114,7 +114,7 @@
     },
     "internal/compiler": {
       "name": "@bunnativekit/compiler",
-      "version": "0.0.5",
+      "version": "0.0.7",
       "dependencies": {
         "@bunnativekit/platform": "workspace:*",
         "@bunnativekit/toolchain": "workspace:*",
@@ -127,7 +127,7 @@
     },
     "internal/debug": {
       "name": "@bunnativekit/debug",
-      "version": "0.0.5",
+      "version": "0.0.7",
       "dependencies": {
         "@bunnativekit/platform": "workspace:*",
         "@bunnativekit/types": "workspace:*",
@@ -139,7 +139,7 @@
     },
     "internal/isolation": {
       "name": "@bunnativekit/isolation",
-      "version": "0.0.5",
+      "version": "0.0.7",
       "dependencies": {
         "@bunnativekit/debug": "workspace:*",
         "@bunnativekit/loader": "workspace:*",
@@ -152,7 +152,7 @@
     },
     "internal/loader": {
       "name": "@bunnativekit/loader",
-      "version": "0.0.5",
+      "version": "0.0.7",
       "dependencies": {
         "@bunnativekit/debug": "workspace:*",
         "@bunnativekit/types": "workspace:*",
@@ -164,7 +164,7 @@
     },
     "internal/platform": {
       "name": "@bunnativekit/platform",
-      "version": "0.0.5",
+      "version": "0.0.7",
       "dependencies": {
         "@bunnativekit/types": "workspace:*",
         "zod": "^4.1.13",
@@ -176,7 +176,7 @@
     },
     "internal/schema": {
       "name": "@bunnativekit/schema",
-      "version": "0.0.5",
+      "version": "0.0.7",
       "dependencies": {
         "@bunnativekit/types": "workspace:*",
       },
@@ -187,7 +187,7 @@
     },
     "internal/toolchain": {
       "name": "@bunnativekit/toolchain",
-      "version": "0.0.5",
+      "version": "0.0.7",
       "dependencies": {
         "@bunnativekit/platform": "workspace:*",
         "@bunnativekit/types": "workspace:*",
@@ -200,7 +200,7 @@
     },
     "packages/aot": {
       "name": "@bunnativekit/aot",
-      "version": "0.0.7",
+      "version": "0.0.9",
       "dependencies": {
         "@bunnativekit/cache": "workspace:*",
         "@bunnativekit/compiler": "workspace:*",
@@ -216,7 +216,7 @@
     },
     "packages/jit": {
       "name": "@bunnativekit/jit",
-      "version": "0.0.7",
+      "version": "0.0.9",
       "dependencies": {
         "@bunnativekit/cache": "workspace:*",
         "@bunnativekit/compiler": "workspace:*",
@@ -233,7 +233,7 @@
     },
     "packages/runtime": {
       "name": "@bunnativekit/runtime",
-      "version": "0.0.7",
+      "version": "0.0.9",
       "dependencies": {
         "@bunnativekit/cache": "workspace:*",
         "@bunnativekit/debug": "workspace:*",
@@ -250,7 +250,7 @@
     },
     "packages/types": {
       "name": "@bunnativekit/types",
-      "version": "0.0.7",
+      "version": "0.0.9",
       "devDependencies": {
         "@types/bun": "latest",
         "typescript": "^5.7.2",
