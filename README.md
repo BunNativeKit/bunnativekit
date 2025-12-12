@@ -10,9 +10,9 @@ Write inline Zig, C, C++, or Rust right in your TypeScript and have it Just Work
 
 ```ts
 import { jit } from "@bunnativekit/jit";
-
+// <lang>.jit() expects a main function. currently it will run main, though this will be configurable in the future.
 const result = await jit.zig(`
-  export fn add(a: i32, b: i32) i32 {
+  export fn main(a: i32, b: i32) i32 {
     return a + b;
   }
 `, 6, 7); // => 13
